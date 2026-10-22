@@ -1,35 +1,79 @@
 
-import time
 import re
+from datetime import datetime, timedelta, timezone
 from collections import defaultdict
 
 # Configuration
-LOG_FILE = "advanced_ids_auth.log"
-FAIL_REGEX = re.compile( r"Failed password for .*? from (?P<ip>(?:\d{1,3}\.){3}\d{1,3})")
-THRESHOLD = 10
-TIME_WINDOW = 60
 
+LOG_FILE = "advanced_ids_auth.log"
+LOG_YEAR = 2026
+THRESHOLD = 5
+TIME_WINDOW = timedelta(seconds=60)
+
+# Match the syslog timestamp at the beginning of each line.
+TIMESTAMP_REGEX = re.compile(
+    r"^(?P<timestamp>[A-Z][a-z]{2}\s+\d{1,2}\s+\d{2}:\d{2}:\d{2})\s+"
+)
+
+# Match failed SSH password attempts and capture the source IP.
+FAIL_REGEX = re.compile(
+    r"Failed password for .*? from "
+    r"(?P<ip>(?:\d{1,3}\.){3}\d{1,3})"
+)
+
+# Store failed-login event timestamps, grouped by source IP.
 failed_attempts = defaultdict(list)
 
 
-def alert(ip, attempts):
+# Timestamp Parsing
+
+def parse_timestamp(line):
+    """Extract and parse the timestamp from a log line."""
+    match = TIMESTAMP_REGEX.search(line)
+
+    if not match:
+        return None
+
+    timestamp_text = match.group("timestamp")
+    timestamp_with_year = f"{timestamp_text} {LOG_YEAR}"
+
+    try:
+        parsed_time = datetime.strptime(
+            timestamp_with_year,
+            "%b %d %H:%M:%S %Y"
+        )
+
+        return parsed_time.replace(tzinfo=timezone.utc)
+
+    except ValueError:
+        return None
+
+
+# Alert Handling
+
+def alert(ip, attempts, event_time):
+    """Print an alert when suspicious activity is detected."""
     print(
-        f"[!] ALERT: Possible brute-force activity detected "
-        f"from {ip} — {attempts} failed attempts "
-        f"within {TIME_WINDOW} seconds."
+        f"[!] ALERT: Possible brute-force activity\n"
+        f"    Source IP: {ip}\n"
+        f"    Failed attempts: {attempts}\n"
+        f"    Detection window: {TIME_WINDOW.total_seconds():.0f} seconds\n"
+        f"    Event time: {event_time.isoformat()}\n"
     )
 
 
-def simulate_log_read():
-    with open(LOG_FILE, "r", encoding="utf-8") as file:
-        for line in file:
-            yield line
-            # Optional: slow playback to simulate monitoring.
-            # Remove this during faster testing.
-            # time.sleep(1)
+# Detection Engine
 
+def check_line(line):
+    """Analyze one log line for repeated failed SSH logins."""
 
-def check_line(line, current_time):
+    # Step 1: Parse the actual event timestamp.
+    event_time = parse_timestamp(line)
+
+    if event_time is None:
+        return
+
+    # Step 2: Identify a failed authentication event.
     match = FAIL_REGEX.search(line)
 
     if not match:
@@ -37,31 +81,45 @@ def check_line(line, current_time):
 
     ip = match.group("ip")
 
-    # Keep only attempts inside the configured time window.
+    # Step 3: Remove attempts outside the rolling time window.
     failed_attempts[ip] = [
         timestamp
         for timestamp in failed_attempts[ip]
-        if current_time - timestamp < TIME_WINDOW
+        if timedelta(0) <= event_time - timestamp < TIME_WINDOW
     ]
 
-    # Record the current failed login.
-    failed_attempts[ip].append(current_time)
+    # Step 4: Record the current failed attempt.
+    failed_attempts[ip].append(event_time)
 
-    # Check whether the detection threshold has been reached.
+    # Step 5: Check the detection threshold.
     if len(failed_attempts[ip]) >= THRESHOLD:
-        alert(ip, len(failed_attempts[ip]))
+        alert(
+            ip,
+            len(failed_attempts[ip]),
+            event_time
+        )
 
-        # Clear the counter after alerting to avoid repeated alerts
-        # for every subsequent failed login in the same burst.
+        # Basic alert suppression for this initial version.
         failed_attempts[ip].clear()
 
 
-def main():
-    print(f"[*] Monitoring log file: {LOG_FILE}\n")
+# Main Program
 
-    for line in simulate_log_read():
-        now = time.time()
-        check_line(line, now)
+def main():
+    print(f"[*] Starting IDS log analysis: {LOG_FILE}\n")
+
+    try:
+        with open(LOG_FILE, "r", encoding="utf-8") as file:
+            for line in file:
+                check_line(line)
+
+        print("[*] Log analysis completed.")
+
+    except FileNotFoundError:
+        print(f"[!] Error: Log file '{LOG_FILE}' was not found.")
+
+    except PermissionError:
+        print(f"[!] Error: Permission denied when reading '{LOG_FILE}'.")
 
 
 if __name__ == "__main__":
